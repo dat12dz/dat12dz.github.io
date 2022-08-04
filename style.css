@@ -1,0 +1,91 @@
+h1{
+ 
+    font-family: 'Bebas Neue', cursive;
+     font-display: block;
+     color:white;
+
+     font-size: 30px;
+     position:relative;
+    top: 0%;
+    
+}
+body{
+    padding-top: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    backdrop-filter: blur(5px);
+    padding: 1%;
+    background-color: #000000bb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding-left: 3%;
+    padding-top: 0;
+    text-align: justify;
+    filter: drop-shadow(0px 2px 4px #02020281);
+   z-index: 1;
+    }
+    .grid-container {
+        display: grid;
+        height: auto;
+        grid-row-end: 3;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        border-radius: 10px;
+        border: 2px solid #00000073;
+       
+        padding: 10px;
+      }
+ 
+    .ButtonShowInfoVilla {
+        position: relative;
+        top: 0;
+        border-radius: 25px;
+        background: #0000009f;
+        padding: 20px;
+        width: auto;
+       height: auto;
+       min-height: 200px;
+       color: aliceblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: 20px; margin-top: 10px;
+        filter: drop-shadow(3px 2px 4px #02020281);
+        border: 0
+      }
+      .ButtonShowInfoVilla:hover{
+
+        background: #8888889f;
+       
+      }
+      #ShowVillaImg{
+        width: 55%;
+        margin-top: -3%;
+        border-radius: 4px;
+      }
+      .VillaName 
+      {
+        margin-top: -3%;
+        text-transform: uppercase;
+      }
+      .VillaInfo
+      {
+        padding: 20px
+        margin-top: -5%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+      #ShowVillaImg{
+
+      }
+    footer{
+       
+        display: block;
+        border-radius: 10px;
+        margin-top: 350px;
+        background-color: black;        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
