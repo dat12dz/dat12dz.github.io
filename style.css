@@ -30,6 +30,7 @@ header{
    z-index: 1;
     }
     .grid-container {
+      margin-top: 200px;
         display: grid;
         height: auto;
         grid-row-end: 3;
@@ -53,7 +54,8 @@ header{
        color: aliceblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
        font-size: 20px; margin-top: 10px;
         filter: drop-shadow(3px 2px 4px #02020281);
-        border: 0
+        backdrop-filter: blur(20px);
+        border: 0;
       }
       .ButtonShowInfoVilla:hover{
 
@@ -88,4 +90,25 @@ header{
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
+    }
+    #BackVideo{
+      margin-left: -15px;
+        width: 102%;
+        color: #9e9e9e;
+        border-radius: 27px;
+    filter:brightness(60%)
+
+     }
+    .MainTitle{
+     
+      
+        
+         margin-top: -50%;
+        ;
+         font-size: 70px;
+         color: white;
+         font-family: 'Barlow Condensed', sans-serif;
+         position:   absolute;
+        align-content: center;
+         padd
     }
