@@ -12,18 +12,68 @@ h1{
   margin-right: 4%;
 }
 #topnav {
-
+text-align: right;
   text-decoration: none;
   display: inline;
   color: rgb(255, 255, 255);
   float: right;
   margin-top: -90px;
   font-size:  16px;
-  padding: 40px 40px 40px 40px
+  padding: 40px 40px 40px 40px;
+transition: 0.25s;  
+overflow: hidden;
+  border-radius: 12px;
 }
+#topnav p{
+  margin-top: -0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #topnav:hover{
   background-color: white;
   color: black;
+  text-align: center;
+  
+}
+#topnav:hover .DropDownContent a{
+      display: block;
+     color: black;
+}
+.DropDownContent p{
+  color: red;
+  font-size: 16px;
+  font-weight: 300px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.DropDownContent a{
+  color:aliceblue;
+  text-decoration: none;
+  display: block;
+
+  display: none;
+  padding: 10px 0px;
+  transition: 0.25s;
+}
+.DropDownContent a:hover{
+  background-color: rgb(160, 160, 160);
+  color: aliceblue;
+}
+.DropDownContent{
+
+      display: none;
+      overflow-y: scroll;
+      height: auto;
+      max-height: 290px;
+      text-align: center;
+}
+
+#topnav:hover .DropDownContent{
+  display: block;
+}
+.DropDownContent input[type=text]{
+   padding: 6px;
+   margin-top: 10px;
 }
 body{
     padding-top: 60px;
@@ -31,7 +81,7 @@ body{
 }
 
 header{
-  overflow: hidden;
+
     backdrop-filter: blur(5px);
     padding: 20px;
     background-color: #000000bb;
@@ -77,7 +127,7 @@ header{
        font-size: 20px; margin-top: 10px;
         filter: drop-shadow(3px 2px 4px #02020281);
         backdrop-filter: blur(20px);
-      
+      transition: 00.25s;
         border: 0;
       }
       .ButtonShowInfoVilla:hover{
@@ -143,6 +193,10 @@ header{
        text-align: center;
          object-position: bottom;
          transform: translateY(-300%);
+    }
+    .VungMienContainer{
+      display: flex;
+      flex-direction: column;
     }
     @media only screen and (max-width:1000px)
   {
