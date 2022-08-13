@@ -9,10 +9,14 @@ h1{
     
 }
 #topnavbase{
-  margin-right: 4%;
+
+  position: absolute;
+  top: 60px;
+  right: 5%;
 }
 #topnav {
-text-align: right;
+  position: relative;
+  text-align: right;
   text-decoration: none;
   display: inline;
   color: rgb(255, 255, 255);
@@ -20,25 +24,27 @@ text-align: right;
   margin-top: -90px;
   font-size:  16px;
   padding: 40px 40px 40px 40px;
-transition: 0.25s;  
-overflow: hidden;
+  transition: 0.25s;  
+  overflow: hidden;
   border-radius: 12px;
+
+
 }
-#topnav p{
-  margin-top: -0px;
+#topnav p{  text-align: center;
+
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #topnav:hover{
   background-color: white;
   color: black;
-  text-align: center;
+
   
 }
 #topnav:hover .DropDownContent a{
       display: block;
      color: black;
-}
+} 
 .DropDownContent p{
   color: red;
   font-size: 16px;
@@ -50,8 +56,6 @@ overflow: hidden;
   color:aliceblue;
   text-decoration: none;
   display: block;
-
-  display: none;
   padding: 10px 0px;
   transition: 0.25s;
 }
@@ -60,7 +64,6 @@ overflow: hidden;
   color: aliceblue;
 }
 .DropDownContent{
-
       display: none;
       overflow-y: scroll;
       height: auto;
@@ -71,6 +74,7 @@ overflow: hidden;
 #topnav:hover .DropDownContent{
   display: block;
 }
+
 .DropDownContent input[type=text]{
    padding: 6px;
    margin-top: 10px;
@@ -129,6 +133,8 @@ header{
         backdrop-filter: blur(20px);
       transition: 00.25s;
         border: 0;
+        text-align: center;
+        text-decoration: none;
       }
       .ButtonShowInfoVilla:hover{
 
@@ -216,5 +222,7 @@ header{
     #topnav{
      padding:  40px 10px 40px 10px;
     }
-
+    #topnavbase{
+      right: 40px;
+    }
   }
