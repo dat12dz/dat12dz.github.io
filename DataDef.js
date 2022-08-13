@@ -13,7 +13,8 @@ class VillaDataBase {
     {
         
     }
-     static VillaList =  [new VillaDataBase("5PN 7100K"," Villa này ở hà nội",5,LuongSon,"/Villa/BaVi/5PN 7100K")] 
+     static VillaList =  [new VillaDataBase("5PN 7100K"," Villa này ở hà nội",5,BaVi,"/Villa/BaVi/5PN 7100K"),
+                          new VillaDataBase("BA VII"," Villa này ở ba vì",5,BaVi,"/Villa/BaVi/5PN 7100K")] 
 
 }
 

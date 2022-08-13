@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
-   
-
-    
     <head>
         <link rel="stylesheet" href="style.css">
         <title> Villa Web</title>
@@ -91,17 +87,7 @@
             
 
 
-            <button class="ButtonShowInfoVilla">
-             
-                <p  class="VillaName"> villa2 </p>
-                <image id = "ShowVillaImg" src=img/villa1.png alt = "Villa1"> 
-                </p>
-                <p class="VillaInfo">Giá Tiền: 
-                        <br>
-                        Số DT liên hệ:
 
-                </p>
-            </button>
 
 
         </form>
@@ -113,7 +99,7 @@
             {
                 var MainPicture = VillaInfo.hrefLink + '_files/main.jpg'
                 var VillaViewPage = VillaInfo.hrefLink  + '.htm';
-                document.getElementById("GirdShowVillaInfo").innerHTML ='<a href= '+ encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
+                document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= '+ encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
                     + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= '+ encodeURIComponent(MainPicture) +' alt =' + VillaInfo.VillaName +
                      '> </p>  <p class="VillaInfo">' + VillaInfo.description;
             }
