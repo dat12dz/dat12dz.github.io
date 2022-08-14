@@ -78,7 +78,7 @@
         </div>
      
 
- 
+        <script src="DataDef.js"></script>
    
         <h1 style="color: black; text-align:center ;  font-size: 50px;"> CÁC VILLA ĐANG CHO THUÊ</h1>
         <br>
@@ -91,14 +91,14 @@
 
 
         </form>
-        <script src="DataDef.js"></script>
+
         
         <script>
             VillaDataBase.VillaList.forEach(ShowVillaInfo);
             function ShowVillaInfo(VillaInfo)
             {
                 var MainPicture = VillaInfo.hrefLink + '_files/main.jpg'
-                var VillaViewPage = VillaInfo.hrefLink  + '.htm';
+                var VillaViewPage = VillaInfo.hrefLink;
                 document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= '+ encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
                     + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= '+ encodeURIComponent(MainPicture) +' alt =' + VillaInfo.VillaName +
                      '> </p>  <p class="VillaInfo">' + VillaInfo.description;
