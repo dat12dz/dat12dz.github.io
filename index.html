@@ -1,124 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title> Villa Web</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    
-    <body>
-    
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> Villa Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
+
     
-       
-        <header>
-            <p > THUÊ VILLA </p>
-                <div id="topnavbase">
-                    <div id = "topnav">
-                            <p > 
-                                <strong>
-                                Địa điểm
-                                </strong>                      
-                                
-                            </p>
-                            <div class = "DropDownContent">
-                                <a href="#">Ba vì</a>
-                                <a href="#">Lương Sơn</a>
-                                <a href="#">Hoà Bình</a>
-                                <a href="#">Tam Đảo</a>
-                                <a href="#">Hạ Long</a>
-                                <p><strong>
-                                    Giá tiền (triệu)
-                                </strong>
-                                    </p>   
-                                        <a href="#">5 - 7</a>
-                                        <a href="#">7 - 9</a>
-                                        <a href="#">9 - 11</a>
-                                        <a href="#">trên 11</a>
+    <header>
+        <p> THUÊ VILLA </p>
+        <div id="topnavbase">
+            <div id="topnav">
+                <p>
+                    <strong>
+                        Địa điểm
+                    </strong>
 
-                        </div>
+                </p>
+                <div class="DropDownContent">
+                    <a href="#">Ba vì</a>
+                    <a href="#">Lương Sơn</a>
+                    <a href="#">Hoà Bình</a>
+                    <a href="#">Tam Đảo</a>
+                    <a href="#">Hạ Long</a>
+                    <p>
+                        <strong>
+                            Giá tiền (triệu)
+                        </strong>
+                    </p>
+                    <a href="#">5 - 7</a>
+                    <a href="#">7 - 9</a>
+                    <a href="#">9 - 11</a>
+                    <a href="#">trên 11</a>
 
-                    </div>
-                     <div id = "topnav">
-                        <p> 
-                            <strong>
-                            Lọc
-                            </strong>
-                        </p>
-                        <div class="DropDownContent">
-                            <p><strong>
-                                Lọc theo người
-                            </strong>      
-                            </p> 
-                                <a href="/myCV/CV.pdf">5 - 7 người</a>
-                                <a href="#">6 - 10 người</a>
-                                <a href="#">10 - 15 người</a>
-                                <a href="#">Trên 15 người</a>
-                    </div>
                 </div>
-        </header>
 
-
-     
-            <video id = "BackVideo" autoplay loop>
-                <source src="img/bg.mp4" type="video/mp4">Trình duyệt không hỗi trợ video
-            </video>
-    
-            
-                <div class = "MainTitle">
-                    <p>CHÚNG TÔI CHO THUÊ VILLA<p>
-                        <p style=" font-size: 20px; font-family: 'Courier New', Courier, monospace; "> Liên hệ ngay để được thuê </p>
+            </div>
+            <div id="topnav">
+                <p>
+                    <strong>
+                        Lọc
+                    </strong>
+                </p>
+                <div class="DropDownContent">
+                    <p>
+                        <strong>
+                            Lọc theo người
+                        </strong>
+                    </p>
+                    <a href="/myCV/CV.pdf">5 - 7 người</a>
+                    <a href="#">6 - 10 người</a>
+                    <a href="#">10 - 15 người</a>
+                    <a href="#">Trên 15 người</a>
                 </div>
+            </div>
+    </header>
+
+
+
+    <video id="BackVideo" autoplay loop>
+        <source src="img/bg.mp4" type="video/mp4">Trình duyệt không hỗi trợ video
+    </video>
+
+
+    <div class="MainTitle">
+        <p>CHÚNG TÔI CHO THUÊ VILLA<p>
+        <p style=" font-size: 20px; font-family: 'Courier New', Courier, monospace; "> Liên hệ ngay để được thuê </p>
+    </div>
+    </div>
+
+
+    <script src="DataDef.js"></script>
+
+    <h1 style="color: black; text-align:center ;  font-size: 50px;"> CÁC VILLA ĐANG CHO THUÊ</h1>
+    <br>
+
+    <form id=GirdShowVillaInfo class="grid-container">
+    </form>
+
+
+    <script>
+        VillaDataBase.VillaList.forEach(ShowVillaInfo);
+        function ShowVillaInfo(VillaInfo) {
+            var MainPicture = VillaInfo.hrefLink + '_files/main.jpg'
+            var VillaViewPage = VillaInfo.hrefLink;
+            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
+                + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +
+                '> </p>  <p class="VillaInfo">' + VillaInfo.description;
+        }
+    </script>
+
+    <footer>
+
+        <h4 style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-weight: 100; text-align: end;">
+            @ Liên hệ với chúng tôi:
+            <a href="https://www.facebook.com/3d.artistdat12dz/" style=" color: aliceblue; display: inline;">Facebook</a>
+            <Br> SĐT: <a href="tel:0969696969" style=" color: aliceblue;">09696969696</a>
+            <br style="color:gray;">@Copyright Datdau Techonologies</br>
+        </h4>
+
+
+        <div class="Footer">
+
         </div>
-     
-
-        <script src="DataDef.js"></script>
-   
-        <h1 style="color: black; text-align:center ;  font-size: 50px;"> CÁC VILLA ĐANG CHO THUÊ</h1>
-        <br>
-       
-        <form id = GirdShowVillaInfo class="grid-container"> 
-            
-
-
-
-
-
-        </form>
-
-        
-        <script>
-            VillaDataBase.VillaList.forEach(ShowVillaInfo);
-            function ShowVillaInfo(VillaInfo)
-            {
-                var MainPicture = VillaInfo.hrefLink + '_files/main.jpg'
-                var VillaViewPage = VillaInfo.hrefLink;
-                document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= '+ encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
-                    + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= '+ encodeURIComponent(MainPicture) +' alt =' + VillaInfo.VillaName +
-                     '> </p>  <p class="VillaInfo">' + VillaInfo.description;
-            }
-        </script>
-        
-        <footer>
-           
-            <h4 style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-weight: 100; text-align: end;"> 
-            @ Liên hệ với chúng tôi:  
-            <a href="https://www.facebook.com/3d.artistdat12dz/" style= " color: aliceblue; display: inline;">Facebook</a>
-                <Br> SĐT: <a href="tel:0969696969"  style= " color: aliceblue;" >09696969696</a> 
-                   <br style="color:gray;">@Copyright Datdau Techonologies</br>
-            </h4>
-       
-
-          <div class="Footer">
-          
-          </div>
-        </footer>
-    </body>
+    </footer>
+</body>
 </html>
-    

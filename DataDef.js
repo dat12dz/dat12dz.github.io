@@ -17,5 +17,5 @@ class VillaDataBase {
 }
 
 //*
-VillaDataBase.VillaList.push(new VillaDataBase("3213","QWERQWRE",20,0,"/villa/BaVi/5PN7100K.htm")); 
+VillaDataBase.VillaList.push(new VillaDataBase("3213","QWERQWRE",20,0,"/5PN7100K.htm")); 
 VillaDataBase.VillaList.push(new VillaDataBase("123123123","312312",6,2,"/villa/BaVi/5PN7100K.htm")); 
