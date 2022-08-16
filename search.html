@@ -18,7 +18,7 @@
 
     
     <header>
-        <p> THUÊ VILLA </p>
+        <p onclick=open(index.html);> THUÊ VILLA </p>
         <div id="topnavbase">
             <div id="topnav">
                 <p>
@@ -68,21 +68,15 @@
 
 
 
-    <video id="BackVideo" autoplay loop>
-        <source src="img/bg.mp4" type="video/mp4">Trình duyệt không hỗi trợ video
-    </video>
+   
 
-
-    <div class="MainTitle">
-        <p>CHÚNG TÔI CHO THUÊ VILLA<p>
-        <p style=" font-size: 20px; font-family: 'Courier New', Courier, monospace; "> Liên hệ ngay để được thuê </p>
-    </div>
-    </div>
+   
+    
 
 
     <script src="DataDef.js"></script>
-
-    <h1 style="color: black; text-align:center ;  font-size: 50px;"> CÁC VILLA ĐANG CHO THUÊ</h1>
+    
+   
     <br>
 
     <form id=GirdShowVillaInfo class="grid-container">
@@ -90,14 +84,66 @@
 
 
     <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const l = urlParams.get('l');
+        const people = urlParams.get('people');
+        const price = urlParams.get('price');
+        var SoNguoiMin = 5;
+        var SoNguoiMax = 7;
+        if (people == "6-10")
+        {
+            SoNguoiMin = 6;
+            SoNguoiMax = 10;
+        }
+        if (people == "10-15")
+        {
+            SoNguoiMin = 10;
+            SoNguoiMax = 15;
+        }
+        if (people == "15")
+        {
+            SoNguoiMin = 15;
+            SoNguoiMax = 999999;
+        }
+        var GiaTienMin = 5;
+        var GiaTienMax = 7;
+        if (price == "7-9")
+        {
+            GiaTienMax = 9;
+            GiaTienMin = 7;
+        }
+        if (price == "9-11")
+        {
+            GiaTienMax = 11;
+            GiaTienMin = 9;
+        }
+        if (price == "u11")
+        {
+            GiaTienMax = 999999;
+            GiaTienMin = 11;
+        }
+        var SoVilla = 0;
         VillaDataBase.VillaList.forEach(ShowVillaInfo);
         function ShowVillaInfo(VillaInfo) {
-            var MainPicture = VillaInfo.MainPicLink;
-            var VillaViewPage = VillaInfo.hrefLink;
-            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
-                + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +
-                '> </p>  <p class="VillaInfo">' + VillaInfo.description;
+            if ( 
+                (VillaInfo.Location == parseInt(l) && l != null) ||
+                 (SoNguoiMax >= VillaInfo.SoNguoi && SoNguoiMin <= VillaInfo.SoNguoi && people !=null) ||
+                  (GiaTienMax*1000000 >= VillaInfo.GiaTien && GiaTienMin*1000000 <= VillaInfo.GiaTien && price != null)               
+                )
+                {
+                    SoVilla++;
+                    var MainPicture = VillaInfo.MainPicLink;
+                    var VillaViewPage = VillaInfo.hrefLink;
+                    document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
+                     + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +
+                    '> </p>  <p class="VillaInfo">' + VillaInfo.description;
+                }
+
         }
+        if (SoVilla == 0){
+                    document.getElementById("GirdShowVillaInfo").innerHTML += " Không có kết quả"
+                }
     </script>
 
     <footer>
