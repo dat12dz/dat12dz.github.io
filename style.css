@@ -184,7 +184,11 @@ header{
        filter:brightness(60%);
        
      }
-
+img{
+  object-fit: scale-down;
+  max-width:fit-content;
+  width: 100%;
+}
      #CanvasVideoBlocker{
       
         width: 100%;
