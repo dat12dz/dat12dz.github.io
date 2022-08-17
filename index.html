@@ -88,14 +88,20 @@
 
     <script src="DataDef.js"></script>
     <script src="ShowLocation.js"></script>
+    var i = 0;
     <script>
+ i++;
         VillaDataBase.VillaList.forEach(ShowVillaInfo);
         function ShowVillaInfo(VillaInfo) {
+            if (i < 6)
+            {
             var MainPicture = VillaInfo.MainPicLink;
             var VillaViewPage = VillaInfo.hrefLink;
             document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
                 + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +
                 '> </p>  <p class="VillaInfo">' + VillaInfo.description;
+                }
+                   
         }
     </script>
 
