@@ -122,7 +122,7 @@ header{
         padding: 10px;
         overflow-y:  auto; 
         overflow-x: hidden;
-        background: rgba(255, 255, 255, 0.22);
+        background: rgba(95, 95, 95, 0.22);
       border-radius: 16px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5px);
@@ -134,8 +134,8 @@ header{
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(1px);
       -webkit-backdrop-filter: blur(1px);
-      border: 1px solid rgba(255, 255, 255, 0.48);
 
+      background-color: #a8a8a83a;
       }
       
      .ButtonShowInfoVilla {
@@ -151,7 +151,8 @@ header{
         transition: 00.25s;      
         text-decoration: none;
         color: #6d6d6d;
-      
+        background-color: #ffffff8a;
+        border: 1px solid rgba(255, 255, 255, 0.9);
       }
       .ButtonShowInfoVilla:hover{
 
