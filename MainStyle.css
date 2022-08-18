@@ -8,6 +8,7 @@ h1{
     top: 0%;
     
 }
+
 #topnavbase{
 
   position: absolute;
@@ -82,6 +83,8 @@ h1{
 body{
     padding-top: 60px;
     font-family: 'Ubuntu', sans-serif;
+    background: url(img/Background/BackgrondAlmostWhite.png);
+ 
 }
 
 header{
@@ -105,36 +108,50 @@ header{
     font-weight: 300px;
     }
     .grid-container {
+    
       margin-top: 200px;
-        display: grid;
-        height: auto;
-        grid-row-end: 1;
-      grid-column-end: 1;
-
-        grid-template-columns: 1 auto auto;
+       
+        
         gap: 10px;
-        border-radius: 10px;
-        border: 2px solid #00000073;
+        height: 500px;
+       display:grid;
+      
+      backdrop-filter: blur(1px);
+       grid-template-columns:  repeat(3, 33%);
+        border: 1px solid #cccccc73;
         padding: 10px;
+        overflow-y:  auto; 
+        overflow-x: hidden;
+        background: rgba(255, 255, 255, 0.22);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.48);
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.22);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      border: 1px solid rgba(255, 255, 255, 0.48);
+
       }
       
-    .ButtonShowInfoVilla {
+     .ButtonShowInfoVilla {
+      border-radius: 10px;
         position: relative;
         top: 0;
-        display: block;
-        background: #0000009f;
+        background-color: rgb(255, 255, 255);
         padding: 20px;
-        width: auto;
-       height: auto;
-       min-height: 200px;
-       color: aliceblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-       font-size: 20px; margin-top: 10px;
-        filter: drop-shadow(3px 2px 4px #02020281);
-        backdrop-filter: blur(20px);
-      transition: 00.25s;
-        border: 0;
-        text-align: center;
+       color: aliceblue; 
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: 20px;
+        filter: drop-shadow(3px 2px 4px #0202021e);
+        transition: 00.25s;      
         text-decoration: none;
+        color: #6d6d6d;
+      
       }
       .ButtonShowInfoVilla:hover{
 
@@ -142,37 +159,39 @@ header{
        
       }
       #ShowVillaImg{
+        object-fit:fill;
         align-self: baseline;
-        width: 30%;
-      
+        width: 100%;
+        height: 60%;
         border-radius: 4px;
-        float: left
       }
       .VillaName 
       {
-        
+        color:#272727;
         text-transform: uppercase;
       }
       .VillaInfo
       {
+        display: block;
+        padding: 20px;
+        margin: -5%;
+        font-size: 16px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         
-    
-        padding: 20px
-        margin-top: -5%;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
       }
       #ShowVillaImg{
       
       }
-    footer{
+    footer{ 
        
         display: block;
-        border-radius: 10px;
+        border-radius: 25px;
         margin-top: 350px;
-        background-color: black;        
-        padding-top: 20px;
-        padding-bottom: 20px;
+        background-image: url(img/background.jpg);    
+      
+
         text-align: center;
+        height: auto;
     }
     #BackVideo{
   
@@ -204,7 +223,87 @@ header{
       display: flex;
       flex-direction: column;
     }
-    @media only screen and (max-width:1000px)
+    .ServiceItem
+    {
+      padding:40px 20px;
+      color: black;
+      font-size: 30px;
+      font-family: 'Barlow Condensed', sans-serif;
+      background-color: white;
+      border: 1px solid rgb(196, 196, 196);
+      vertical-align: top;
+      display: block;
+      transition: 1s;
+      border-radius: 16px;
+      
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.48);
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.22);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      border: 1px solid rgba(255, 255, 255, 0.48);
+
+    }
+    #buttonService :hover{ 
+     
+    }
+
+    .ServiceDes
+    {
+      font-size: 25px;
+      font-family: 'Alumni Sans Pinstripe', sans-serif;
+      
+    }
+    .ServiceItem svg{
+      margin-top: -90px;
+      vertical-align: top;
+      filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.281));
+    }
+    .ServiceGirdShow
+    {
+      grid-template-columns: repeat(3,15.625%);
+
+      margin-left: auto;
+      margin-right: auto;
+      gap: 50px;
+      width: 100%;
+        margin-left: 24%;
+
+    }
+    .TitleFooterGird{
+      color: white;
+      font-size: 30px;
+      font-family: 'Barlow Condensed', sans-serif;
+      
+    }
+    .DesFooterGird{
+      font-size: 14px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      display: inline;
+    }
+    .FooterGird{
+      text-align: center;
+      grid-template-columns: repeat(3,30%);
+      gap: 7%;
+
+    }
+    .FooterBackdropFiler{
+      
+      border-radius: 25px;
+      backdrop-filter: brightness(10%) blur(10px);
+ 
+    }
+    .FooterGird a{
+      color: aliceblue;
+    }
+
+@media only screen and (max-width:1000px)
   {
       .MainTitle{   
         transform: translateY(-160%);
@@ -213,7 +312,7 @@ header{
         font-family: 'Barlow Condensed', sans-serif;
        position: relative;
       text-align: center;
-        
+    
    }
    .grid-container
     {
@@ -225,4 +324,23 @@ header{
     #topnavbase{
       right: 40px;
     }
+    .ServiceGirdShow{
+      grid-template-columns: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ServiceItem{
+      margin-left: auto;
+      width: 100%;
+    }
+    .grid-container{
+      grid-template-columns: 100%;
+    }
+    .FooterGird{
+      grid-template-columns: 100%;
+      gap: 0;
+      margin-left: auto;
+      text-align: center;
+    }
+    
   }

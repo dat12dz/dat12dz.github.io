@@ -23,7 +23,10 @@ class VillaDataBase {
 
 //*
 VillaDataBase.VillaList.push(new VillaDataBase("Đạt Đậu","Tôi tên kalf đaua<br>dsfdasfsffdasfafsadf",6,1,"/villa/BaVi/5PN7100K.htm","/villa/BaVi/5PN7100K_files/image013.jpg",1000000)); 
-VillaDataBase.VillaList.push(new VillaDataBase("BaVi","",6,1,"/villa/BaVi/BAVII.htm","/villa/BaVi/5PN7100K_files/image014.jpg",5000000)); 
+VillaDataBase.VillaList.push(new VillaDataBase("BaVi","Khách sạn này ở ba vì và có rất nhiều cảnh đẹp",6,1,"/villa/BaVi/BAVII.htm","/villa/BaVi/5PN7100K_files/image014.jpg",5000000));
+VillaDataBase.VillaList.push(new VillaDataBase("BaVi","Khách sạn này ở ba vì và có rất nhiều cảnh đẹp",6,1,"/villa/BaVi/BAVII.htm","/villa/BaVi/5PN7100K_files/image014.jpg",5000000)); 
+VillaDataBase.VillaList.push(new VillaDataBase("BaVi","Khách sạn này ở ba vì và có rất nhiều cảnh đẹp",6,1,"/villa/BaVi/BAVII.htm","/villa/BaVi/5PN7100K_files/image014.jpg",5000000));  
+
 //* LAPK
 LocationList.push("Hoà Bình");
 LocationList.push("Ba Vì");

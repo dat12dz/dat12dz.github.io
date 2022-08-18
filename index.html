@@ -8,14 +8,14 @@
 </head>
 
 <body>
-
+     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
     
     <header>
         <p> THUÊ VILLA </p>
@@ -72,15 +72,24 @@
 
 
     <div class="MainTitle">
-        <p>CHÚNG TÔI CHO THUÊ VILLA<p>
+        <p><p>
         <p style=" font-size: 20px; font-family: 'Courier New', Courier, monospace; "> Liên hệ ngay để được thuê </p>
     </div>
     </div>
 
 
     
+    <div style="margin-top: 100px;">
+       
+                <h1 style="color: black; text-align:center ;  font-size: 50px; 
+                "> Luxury hotel
+                    <p style="color: black; text-align:center ;  font-size: 25px;font-family:  'Alumni Sans Pinstripe', sans-serif;
+                    "> Ghi chú thích tại đây</p>
+                </h1>
+        
+    </div>
 
-    <h1 style="color: black; text-align:center ;  font-size: 50px;"> CÁC VILLA ĐANG CHO THUÊ</h1>
+    
     <br>
 
     <form id=GirdShowVillaInfo class="grid-container">
@@ -88,36 +97,160 @@
 
     <script src="DataDef.js"></script>
     <script src="ShowLocation.js"></script>
-    var i = 0;
+
     <script>
- i++;
+    var i = 0;
         VillaDataBase.VillaList.forEach(ShowVillaInfo);
         function ShowVillaInfo(VillaInfo) {
             if (i < 6)
             {
+          
             var MainPicture = VillaInfo.MainPicLink;
             var VillaViewPage = VillaInfo.hrefLink;
             document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
                 + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +
                 '> </p>  <p class="VillaInfo">' + VillaInfo.description;
+                i++;
                 }
                    
         }
+
     </script>
 
-    <footer>
+    <div id = "GreatCustomerService" style="margin-top: 400px; padding-top:200px ; padding-bottom: 200px ;
+     overflow: hidden; background-image: url(/img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp);
+     object-fit:cover;  background-attachment: fixed; border-radius: 9px;text-align: center;" >
+         <svg height="1px" width="33%">
+            <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 255, 255);stroke-width:2px" >
 
-        <h4 style="color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-weight: 100; text-align: end;">
-            @ Liên hệ với chúng tôi:
-            <a href="https://www.facebook.com/NENEsokiu" style=" color: aliceblue; display: inline;">Facebook</a>
-            <Br> SĐT: <a href="tel:0825685636" style=" color: aliceblue;">0825685636</a>
-            <br style="color:gray;">@Copyright Datdau Techonologies</br>
-        </h4>
+         <h1 style=" color:rgb(255, 255, 255) ; font-size: 50px ;top :15px;display: inline ; margin-left: 9px;" 
+         >Great Customer Service
+        
+
+        </h1>
+    </svg>
+    <svg height="1px" width="33%" >
+<line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 255, 255);stroke-width:2px" />
+</svg>
+    </div>
 
 
-        <div class="Footer">
+
+
+
+     <div class="Service" style="margin-top: 300px;padding-bottom: 60px;overflow: hidden;">
+
+            <h1 style=" color:rgb(73, 73, 73) ; font-size: 50px; text-align: center; ">
+                Our SERVICE
+            </h1>
             
+            <svg height="1px" width="100%" style="transform: translate(0,-30px);" >
+                <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgba(163, 163, 163, 0.527);stroke-width:2px" />
+              </svg>
+              
+            <div class="ServiceGirdShow" style="display:grid; overflow:1inherit">
+
+                        <button class="ServiceItem">
+                            <svg height="100" width="100" >
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
+                              </svg>
+                            <p>
+                                Breakfast
+                            </p>
+                            <p class="ServiceDes">
+                                chú thích ghi tại đây
+                            </p>
+                        </button>
+                        <button class="ServiceItem">
+                            <svg height="100" width="100" >
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
+                              </svg>
+                            <p>
+                                Breakfast
+                            </p>
+                            <p class="ServiceDes">
+                                chú thích ghi tại đây
+                            </p>
+                        </button>
+                        <button class="ServiceItem">
+                            <svg height="100" width="100" >
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
+                              </svg>
+                            <p>
+                                Breakfast
+                            </p>
+                            <p class="ServiceDes">
+                                chú thích ghi tại đây
+                            </p>
+                        </button>
+                        <button class="ServiceItem">
+                            <svg height="100" width="100" >
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
+                              </svg>
+                            <p>
+                                Breakfast
+                            </p>
+                            <p class="ServiceDes">
+                                chú thích ghi tại đây
+                            </p>
+                        </button>
+                        <button class="ServiceItem">
+                            <svg height="100" width="100" >
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
+                              </svg>
+                            <p>
+                                Breakfast
+                            </p>
+                            <p class="ServiceDes">
+                                chú thích ghi tại đây
+                            </p>
+                        </button>
+                        <button class="ServiceItem">
+                            <svg height="100" width="100" >
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
+                              </svg>
+                            <p>
+                                Breakfast
+                            </p>
+                            <p class="ServiceDes">
+                                chú thích ghi tại đây
+                            </p>
+                        </button>
+
+            </div>
+
+     </div>
+    <footer>
+        <div class="FooterBackdropFiler">
+            <div class= "FooterGird" style="display:grid;">
+                <div >
+                    <p class = "TitleFooterGird"> Reservation  </p>
+                    <p class="DesFooterGird"> Liên hệ với chúng tôi:</p>
+                    <br>
+                    <a href="tel:0825685636">0825685636</a>
+                    <br>
+                    <a href="tel:0393030453">0393030453</a>
+                </div>
+                <div >
+                    <p class = "TitleFooterGird"> Address  </p>
+                    <p class="DesFooterGird"> Ghi địa chỉ tại đây</p>
+                
+                </div>
+                <div >
+                    <p class = "TitleFooterGird"> Social  </p>
+                    <button style="background-color: rgba(0, 0, 0, 0); border: 0;" onclick=window.open('https://www.facebook.com/Angel-Group-Thu%C3%AA-Villa-Resort-109909395152513/');>
+                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z" style="fill: white"></svg>
+                    </button>
+                </div>
+            </div>
+
+             <img  width="640" height="360" src="img/LogoTransparent.png" alt="Can't Load" style="filter:contrast(2000); max-width: 100%; object-fit:scale-down; z-index:-1 ;
+                margin-top: -60px;display: inline-block;"></img>
+
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
