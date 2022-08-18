@@ -107,9 +107,11 @@
           
             var MainPicture = VillaInfo.MainPicLink;
             var VillaViewPage = VillaInfo.hrefLink;
-            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla"> <p  class="VillaName">'
-                + VillaInfo.VillaName + '</p> <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +
-                '> </p>  <p class="VillaInfo">' + VillaInfo.description;
+            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla">' +
+                ' <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +'>'+
+                '<p  class="VillaName">'  + VillaInfo.VillaName +  '</p>'+
+                
+                    '  <p class="VillaInfo">' + VillaInfo.description;
                 i++;
                 }
                    
@@ -227,8 +229,8 @@
                     <p class = "TitleFooterGird"> Reservation  </p>
                     <p class="DesFooterGird"> Liên hệ với chúng tôi:</p>
                     <br>
-                    <a href="tel:0825685636">0825685636</a>
-                    <br>
+                    <a style="padding-right: 0px ;" href="tel:0825685636">0825685636</a>
+                    
                     <a href="tel:0393030453">0393030453</a>
                 </div>
                 <div >
@@ -247,7 +249,7 @@
 
              <img width="200"  src="img/LogoTransparent.png" alt="Can't Load" style="filter:contrast(2000); max-width: 100%; object-fit:scale-down; z-index:-99 ;
                 margin-top: 0px;display: inline-block;"></img>
-
+            
             </div>
         </div>
     </footer>

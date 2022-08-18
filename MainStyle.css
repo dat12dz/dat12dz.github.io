@@ -124,17 +124,10 @@ header{
         overflow-x: hidden;
         background: rgba(95, 95, 95, 0.22);
       border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    
-      border: 1px solid rgba(255, 255, 255, 0.48);
-      /* From https://css.glass */
-      background: rgba(255, 255, 255, 0.22);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(1px);
+
      
 
-      background-color: #a8a8a83a;
+      background-color: #ffffff3a;
       }
       
      .ButtonShowInfoVilla {
@@ -144,15 +137,23 @@ header{
         background-color: rgb(255, 255, 255);
         padding: 20px;
        color: aliceblue; 
-       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-family: Times;
        font-size: 20px;
         filter: drop-shadow(3px 2px 4px #0202021e);
         transition: 00.25s;      
         text-decoration: none;
         color: #6d6d6d;
         background-color: #ffffffd3;
-        border: 1px solid rgba(255, 255, 255, 0.9);
-        height: inherit;
+ 
+        height: 451px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+        border: 1px solid rgba(255, 255, 255, 0.48);
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.22);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1px);
       }
       .ButtonShowInfoVilla:hover{
 
@@ -229,7 +230,7 @@ header{
       padding:40px 20px;
       color: black;
       font-size: 30px;
-      font-family: 'Barlow Condensed', sans-serif;
+      font-family: Times, sans-serif;
       background-color: white;
       border: 1px solid rgb(196, 196, 196);
       vertical-align: top;
@@ -279,7 +280,8 @@ header{
     .TitleFooterGird{
       color: white;
       font-size: 30px;
-      font-family: 'Barlow Condensed', sans-serif;
+      font-family: Times;
+      font-weight: 300;
       
     }
     .DesFooterGird{
@@ -302,6 +304,7 @@ header{
     }
     .FooterGird a{
       color: aliceblue;
+      display: inline;
     }
 
 @media only screen and (max-width:1000px)
