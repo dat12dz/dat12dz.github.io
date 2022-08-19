@@ -154,6 +154,7 @@ header{
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(1px);
+       
       }
       .ButtonShowInfoVilla:hover{
 
@@ -161,11 +162,12 @@ header{
        
       }
       #ShowVillaImg{
-        object-fit:fill;
+
         align-self: baseline;
         width: 100%;
         height: 60%;
         border-radius: 4px;
+        object-fit: cover;
       }
       .VillaName 
       {
@@ -196,14 +198,17 @@ header{
         height: auto;
     }
     #BackVideo{
-  
-   
-        width: 100%;
-   
-
+      background-image: url(img/Background/20220818_143854_0000.png);
         border-radius: 27px;
-       filter:brightness(60%);
-       
+ 
+       height: 700px;
+       background-attachment: fixed;
+       width: 100%;
+      object-fit: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
      }
 
      #CanvasVideoBlocker{
@@ -306,7 +311,12 @@ header{
       color: aliceblue;
       display: inline;
     }
-
+    .MainIcon{
+      position: absolute;
+      transform: translate(-75px,25px);
+      fill: white;
+      filter: drop-shadow(0px);
+    }
 @media only screen and (max-width:1000px)
   {
       .MainTitle{   
@@ -348,5 +358,10 @@ header{
     }
     .line{
       display: none;
+    }
+    #BackVideo{
+      width: 100%;
+      max-height: 200px;
+
     }
   }
