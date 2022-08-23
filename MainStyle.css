@@ -84,7 +84,7 @@ body{
     padding-top: 60px;
     font-family: 'Ubuntu', sans-serif;
     background: url(img/Background/BackgrondAlmostWhite.png);
-    background: linear-gradient(55deg, #ff9900 0%, #ffffff 51%, #eeeeee 85%);
+
  
 }
 
@@ -265,7 +265,7 @@ header{
     {
       font-size: 25px;
       font-family: 'Alumni Sans Pinstripe', sans-serif;
-      
+ 
     }
     .ServiceItem svg{
       margin-top: -90px;

@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+}
+.MainPicture{
+    margin-top: 200px;
+ width: 50%;
+ padding-left: 25%;
+}
+.Description{
+    font-family: sans-serif;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    backdrop-filter: brightness(200%);
+}
+.SlideShow{
+    text-align: center;
+    
+}
+.mySlides{
+    margin-left: calc((100% - 1176px - 100px)/2);
+    border: 50px solid rgba(119, 119, 119, 0.315);
+    backdrop-filter: blur(2px);
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.418));
+    width: 1176px;
+    height: 664px;
+
+}
+
+.nextBtn{
+
+background: rgba(8, 8, 8, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width: 80px;
+height:80px;
+transition: 0.25s;
+font-size: large;
+z-index: 1;
+color: white;
+}
+.PictureContaainer{
+    margin-top: 300px;
+
+}
+.nextBtn:hover{
+   
+    background: rgba(233, 233, 233, 0.2);
+}
+.SlideSHowBackground
+{
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+    height: 300px;
+    position: absolute;
+    top:1220px;
+    left: 0;
+    z-index: -2;
+
+}
+@media only screen and (max-width:1000px)
+{
+.mySlides{
+    max-width: 80%;
+    height: auto;
+    border: 20px solid rgba(119, 119, 119, 0.315);
+    margin-left: calc((10%-20px)/2);
+    padding: 0 0 0 0;
+}
+.nextBtn{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+.SlideSHowBackground{
+
+    top:750px;
+    height: 150px;
+}
+.MainPicture{
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+}
+}
