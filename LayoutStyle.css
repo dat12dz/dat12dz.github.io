@@ -7,10 +7,12 @@ body{
  padding-left: 25%;
 }
 .Description{
-    font-family: sans-serif;
+    font-family:  'Alumni Sans Pinstripe',sans-serif;
     color:rgb(0, 0, 0);
     font-size: 20px;
-    backdrop-filter: brightness(200%);
+    text-align: center;
+    font-weight: 800;
+    
 }
 .SlideShow{
     text-align: center;
@@ -25,6 +27,8 @@ body{
     height: 664px;
     animation-name: fade;
     animation-duration: 0.5s;
+    object-fit: cover;
+    background-position: center;
 }
 
 .nextBtn{

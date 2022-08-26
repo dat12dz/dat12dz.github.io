@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="MainStyle.css">
     <link rel="stylesheet" href="LayoutStyle.css">
-    <title> ClVilla</title>
+    <title> Thông tin Villa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -17,9 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Anek+Telugu:wght@200;800&display=swap" rel="stylesheet">
     <header>
-        <p> THUÊ VILLA </p>
+        <button style="background-color: transparent;" onclick = HomeClick()>
+            <img style="margin-top: 5px;" src="logo/LogoTransParent.png" width="64" height="64">
+        </button>
+        <script>
+            function HomeClick()
+            {
+                open("index.html");
+            }
+        </script>
         <div id="topnavbase">
             <div id="topnav">
                 <p>
@@ -82,7 +90,7 @@
     }
     
 </script>
-    <div style="text-align: center;  background-image: url(img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp);margin-top: -30px;background-size: cover; 
+    <div id="TitleBackground" style="text-align: center;  background-image: url(img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp);margin-top: -30px;background-size: cover; 
   ">
      <div style="backdrop-filter: brightness(50%);  ">
         <h1 style=" font-size: 50px; padding-top: 100px; padding-bottom: 100px;font-family: Times; font-weight: 100;" id="Title"> 
@@ -112,18 +120,7 @@
 
 </div>
 <script>
-           LoadFile(function() {   
-            document.getElementById("PictureContainer").innerHTML = null;
-         const ImgDir = window.LoadFileRes.split(String.fromCharCode(10));
-                console.log(ImgDir);
-             ImgDir.forEach(element=> {
-             document.getElementById("PictureContainer").innerHTML += '<img class="mySlides" src=' + decodeURIComponent(uParam.get("link")) +"/" +  element + ">"; 
-             plusDivs(0);
-             RestartChagePicture();
-             })
-         }
-         ,
-        decodeURIComponent(uParam.get("link")) +"\\FilePictureDirectory.txt");
+
 slideIndex = 1;
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -151,15 +148,32 @@ function showDivs(n) {
 }
 </script>
         </div>
+        
+    <image id="MainPicShow" src="img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp" class = "MainPicture"></image>
+    <script>
 
-    <image src="img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp" class = "MainPicture"></image>
-    
+    </script>
      <p class="Description" id="Des">
     
     </p>
     <script>
-
+const MainUrl = decodeURIComponent(uParam.get("link"));
     LoadFile(function(){ document.getElementById("Des").innerText = LoadFileRes },encodeURIComponent(uParam.get("link")) + "\\Description.txt");
+    LoadFile(function() {   
+            document.getElementById("PictureContainer").innerHTML = null;
+         const ImgDir = window.LoadFileRes.split(String.fromCharCode(10));
+                console.log(ImgDir);
+             ImgDir.forEach(element=> {
+             document.getElementById("PictureContainer").innerHTML += '<img class="mySlides" src=' + decodeURIComponent(uParam.get("link")) +"/" +  element + ">"; 
+             });
+             plusDivs(0);
+             RestartChagePicture();
+           element = document.getElementById("MainPicShow");
+           element.getAttributeNode('src').value = MainUrl + "/" + ImgDir[0]; 
+           document.getElementById("TitleBackground").style.backgroundImage = "url("+ MainUrl + "/" + ImgDir[0] +")";
+         }
+         ,
+        decodeURIComponent(uParam.get("link")) +"\\FilePictureDirectory.txt");
     </script>
     <footer>
         <div class="FooterBackdropFiler">
