@@ -107,12 +107,13 @@
           
             var MainPicture = VillaInfo.MainPicLink;
             var VillaViewPage = VillaInfo.hrefLink;
-            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + encodeURIComponent(VillaViewPage) + ' class="ButtonShowInfoVilla">' +
+            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + "info.html?" + "link=" + encodeURIComponent(VillaInfo.WebLink) + "&villaname=" +VillaInfo.VillaName + ' class="ButtonShowInfoVilla">' +
                 ' <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +'>'+
                 '<p  class="VillaName">'  + VillaInfo.VillaName +  '</p>'+
                 
                     '  <p class="VillaInfo">' + VillaInfo.description;
                 i++;
+                
                 }
                    
         }

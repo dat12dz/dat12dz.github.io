@@ -1,0 +1,2 @@
+FilePicture/img1.png
+FilePicture/img2.webp

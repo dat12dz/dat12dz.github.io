@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="LayoutStyle.css">
+    <title> ClVilla</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+
+    <header>
+        <p> THUÊ VILLA </p>
+        <div id="topnavbase">
+            <div id="topnav">
+                <p>
+                    <strong>
+                        Địa điểm
+                    </strong>
+
+                </p>
+                <div class="DropDownContent">
+                    <div id="location">
+
+                    </div>   
+                    <p>
+                        <strong>
+                            Giá tiền (triệu)
+                        </strong>
+                    </p>
+                    <a href="search.html?price=5-7">5 - 7</a>
+                    <a href="search.html?price=7-9">7 - 9</a>
+                    <a href="search.html?price=9-11">9 - 11</a>
+                    <a href="search.html?price=u11">trên 11</a>
+
+                </div>
+
+            </div>
+            <div id="topnav">
+                <p>
+                    <strong>
+                        Lọc
+                    </strong>
+                </p>
+                <div class="DropDownContent">
+                    <p>
+                        <strong>
+                            Lọc theo người
+                        </strong>
+                    </p>
+                    <a href="search.html?people=5-7">5 - 7 người</a>
+                    <a href="search.html?people=6-10">6 - 10 người</a>
+                    <a href="search.html?people=10-15">10 - 15 người</a>
+                    <a href="search.html?people=U15">Trên 15 người</a>
+                </div>
+            </div>
+    </header>
+    <script src="DataDef.js"></script>
+    <script src="ShowLocation.js"></script>
+<script>
+     var LoadFileRes = ""; 
+    
+    function LoadFile(Action,FilePath)
+    {
+        const http = new XMLHttpRequest();
+        http.onload = function(){
+            LoadFileRes = this.responseText;
+            Action();
+        };
+        
+        http.open("GET",FilePath);
+        http.send();  
+    }
+    
+</script>
+    <div style="text-align: center;  background-image: url(img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp);margin-top: -30px;background-size: cover; 
+  ">
+     <div style="backdrop-filter: brightness(50%);  ">
+        <h1 style=" font-size: 50px; padding-top: 100px; padding-bottom: 100px;font-family: Times; font-weight: 100;" id="Title"> 
+           Đạt
+         </h1>  
+     </div> 
+    </div>
+    
+        <div class = "SlideShow">
+<script>
+    const queryString = window.location.search;
+    const uParam = new URLSearchParams(queryString);
+    const VillaName = uParam.get("villaname");
+    document.getElementById("Title").innerText = VillaName;
+</script>
+
+<div class="PictureContaainer">
+    <img class ="SlideSHowBackground" src ="img/Background/floor.jpg">
+    <div id="PictureContainer">
+        <img class="mySlides" src="img/Background/20220818_143854_0000.png">
+        <img class="mySlides" src="img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp">
+    </div>
+
+
+  <button class="nextBtn" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="nextBtn" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+<script>
+           LoadFile(function() {   
+            document.getElementById("PictureContainer").innerHTML = null;
+         const ImgDir = window.LoadFileRes.split(String.fromCharCode(10));
+                console.log(ImgDir);
+             ImgDir.forEach(element=> {
+             document.getElementById("PictureContainer").innerHTML += '<img class="mySlides" src=' + decodeURIComponent(uParam.get("link")) +"/" +  element + ">"; 
+             plusDivs(0);
+             RestartChagePicture();
+             })
+         }
+         ,
+        decodeURIComponent(uParam.get("link")) +"\\FilePictureDirectory.txt");
+slideIndex = 1;
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+
+}
+var ChangePictureLoop;
+function RestartChagePicture()
+{
+    clearInterval(ChangePictureLoop);
+    ChangePictureLoop = setInterval(() => { plusDivs(1);  }, 5000)
+}
+
+
+function showDivs(n) {
+  var i;
+  CanChangePicture = false;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+  RestartChagePicture();
+}
+</script>
+        </div>
+
+    <image src="img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp" class = "MainPicture"></image>
+    
+     <p class="Description" id="Des">
+    
+    </p>
+    <script>
+
+    LoadFile(function(){ document.getElementById("Des").innerText = LoadFileRes },encodeURIComponent(uParam.get("link")) + "\\Description.txt");
+    </script>
+    <footer>
+        <div class="FooterBackdropFiler">
+            <div class= "FooterGird" style="display:grid;">
+                <div >
+                    <p class = "TitleFooterGird"> Reservation  </p>
+                    <p class="DesFooterGird"> Liên hệ với chúng tôi:</p>
+                    <br>
+                    <a style="padding-right: 0px ;" href="tel:0825685636">0825685636</a>
+                    
+                    <a href="tel:0393030453">0393030453</a>
+                </div>
+                <div >
+                    <p class = "TitleFooterGird"> Address  </p>
+                    <p class="DesFooterGird"> Ghi địa chỉ tại đây</p>
+                
+                </div>
+                <div >
+                    <p class = "TitleFooterGird"> Social  </p>
+                    <button style="background-color: rgba(0, 0, 0, 0); border: 0;" onclick=window.open('https://www.facebook.com/Angel-Group-Thu%C3%AA-Villa-Resort-109909395152513/');>
+                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" width="64" height="64">
+                        <path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z" style="fill: white"></svg>
+                    </button>
+                </div>
+            </div>
+
+             <img width="200"  src="img/LogoTransparent.png" alt="Can't Load" style="filter:contrast(2000); max-width: 100%; object-fit:scale-down; z-index:-99 ;
+                margin-top: 0px;display: inline-block;"></img>
+            
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
