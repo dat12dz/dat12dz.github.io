@@ -1,2 +1,2 @@
 FilePicture/img1.png
-FilePicture/img2.webp
+FilePicture/Img2.webp
