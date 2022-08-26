@@ -25,7 +25,7 @@ class VillaDataBase {
 }
 
 //*
-VillaDataBase.VillaList.push(new VillaDataBase("Đạt Đậu","Tôi tên kalf đaua<br>dsfdasfsffdasfafsadf",6,1,"/villa/BaVi/ST700K","/villa/BaVi/5PN7100K_files/image013.jpg",1000000)); 
+VillaDataBase.VillaList.push(new VillaDataBase("Đạt Đậu","Tôi tên kalf đaua<br>dsfdasfsffdasfafsadf",6,1,"/Villa/BaVi/ST700K","/villa/BaVi/5PN7100K_files/image013.jpg",1000000)); 
 
 
 
