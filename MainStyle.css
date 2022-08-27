@@ -321,7 +321,7 @@ header{
       
       border-radius: 25px;
       backdrop-filter: brightness(10%) blur(10px);
- 
+     -webkit-backdrop-filter: brightness(10%) blur(10px);
     }
     .FooterGird a{
       color: aliceblue;
