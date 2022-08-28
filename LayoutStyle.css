@@ -30,6 +30,8 @@ body{
     animation-duration: 0.5s;
     object-fit: cover;
     background-position: center;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
 }
 
 .nextBtn{
