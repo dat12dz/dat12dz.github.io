@@ -285,7 +285,6 @@ header{
     .MainIcon{
       transform: translate(50%,50%);
       fill: white;
-      filter: drop-shadow(0px);
     }
     .ServiceGirdShow
     {
