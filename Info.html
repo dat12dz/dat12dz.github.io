@@ -164,6 +164,7 @@ const MainUrl = decodeURIComponent(uParam.get("link"));
          const ImgDir = window.LoadFileRes.split(String.fromCharCode(10));
                 console.log(ImgDir);
              ImgDir.forEach(element=> {
+                if (element != "")
              document.getElementById("PictureContainer").innerHTML += '<img class="mySlides" src=' + decodeURIComponent(uParam.get("link")) +"/" +  element + ">"; 
              });
              plusDivs(0);
