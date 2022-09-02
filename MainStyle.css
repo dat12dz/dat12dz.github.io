@@ -34,7 +34,7 @@ background: none;
   transition: 0.25s;  
   overflow: hidden;
   border-radius: 12px;
-
+  -webkit-transition: 0.25s;
 
 }
 #topnav p{  text-align: center;
@@ -57,6 +57,7 @@ background: none;
   font-size: 16px;
   font-weight: 300px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .DropDownContent a{
@@ -65,6 +66,7 @@ background: none;
   display: block;
   padding: 10px 0px;
   transition: 0.25s;
+  -webkit-transition: 0.25s;
 }
 .DropDownContent a:hover{
   background-color: rgb(160, 160, 160);
@@ -79,7 +81,8 @@ background: none;
 }
 
 #topnav:hover .DropDownContent{
-  display: block;
+  display: inline-block;
+  
 }
 
 .DropDownContent input[type=text]{
@@ -108,7 +111,7 @@ header{
     padding-top: 0;
     text-align: justify;
     filter: drop-shadow(0px 2px 4px #02020281);
-   z-index: 1;
+    z-index: 1;
    color: aliceblue;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
