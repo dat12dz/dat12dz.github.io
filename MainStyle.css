@@ -38,9 +38,12 @@ background: none;
   -webkit-transition: 0.25s;
 
 }
-#topnav p{  text-align: center;
-
+#topnav button{  text-align: center;
+margin-top: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 15px;
 }
 
 #topnav:hover {
