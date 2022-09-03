@@ -26,12 +26,7 @@ body{
     width: 1176px;
     height: 664px;
     margin-left: calc((100% - (1176px + 100px))/2);
-    animation-name: fade;
-    animation-duration: 0.5s;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 0.5s;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+
 }
 
 .nextBtn{
@@ -79,7 +74,7 @@ color: white;
 .mySlides{
 
     width: 80%;
- 
+    height: 200px;
     border: 20px solid rgba(119, 119, 119, 0.315);
     margin-left: calc((10%-20px)/2);
     -webkit-margin-start: calc((10%-20px)/2);
@@ -91,7 +86,7 @@ color: white;
     
 }
 .SlideSHowBackground{
-
+    
     top:750px;
     height: 150px;
 }
