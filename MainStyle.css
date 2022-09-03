@@ -218,11 +218,11 @@ header{
        height: 700px;
        background-attachment: fixed;
        width: 100%;
-      object-fit: cover;
+
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      
+      -webkit-background-origin: content-box;
      }
 
      #CanvasVideoBlocker{
