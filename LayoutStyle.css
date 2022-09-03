@@ -50,7 +50,7 @@ color: white;
 .PictureContaainer{
     margin-top: 300px;
 }
-.nextBtn:hover{
+.nextBtn:active{
     background: rgba(233, 233, 233, 0.2);
 }
 .SlideSHowBackground
@@ -77,7 +77,7 @@ color: white;
 @media only screen and (max-width:1000px)
 {
 .mySlides{
-    object-fit:scale-down;
+    object-fit:none;
     width: 80%;
     height: 200px;
     border: 20px solid rgba(119, 119, 119, 0.315);
