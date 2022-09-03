@@ -77,7 +77,7 @@ color: white;
     height: 200px;
     border: 20px solid rgba(119, 119, 119, 0.315);
     margin-left: calc((10%-20px)/2);
-    -webkit-margin-start: calc((10%-20px)/2);
+  
 }
 .nextBtn{
     margin-top: 10px;
