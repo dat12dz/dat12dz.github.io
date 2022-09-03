@@ -27,7 +27,7 @@ body{
     
     width: 1176px;
     height: 664px;
-    object-fit: cover;
+
 
 
     
@@ -57,7 +57,7 @@ color: white;
     width: 100%;
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
-    object-fit: cover;
+
     height: 300px;
     position: absolute;
     top:1220px;
