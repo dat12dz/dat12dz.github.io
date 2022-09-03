@@ -22,8 +22,7 @@ body{
     margin-left: calc((100% - 1176px - 100px)/2); 
     border: 50px solid rgba(119, 119, 119, 0.315);
 
-    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.418));
-    -webkit-filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.418));
+
     
     width: 1176px;
     height: 664px;
