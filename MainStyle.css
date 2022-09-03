@@ -42,15 +42,14 @@ background: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#topnav:hover{
+#topnav:active {
   background-color: white;
   color: black;
-
-  
 }
-#topnav:hover .DropDownContent a{
+#topnav:active .DropDownContent a{
       display: block;
      color: black;
+     background-color: white;
 } 
 .DropDownContent p{
   color: red;
@@ -63,14 +62,15 @@ background: none;
 .DropDownContent a{
   color:aliceblue;
   text-decoration: none;
+  
   display: block;
   padding: 10px 0px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
 }
-.DropDownContent a:hover{
+.DropDownContent a:active{
   background-color: rgb(160, 160, 160);
-  color: aliceblue;
+  color: white;
 }
 .DropDownContent{
       display: none;
@@ -80,7 +80,7 @@ background: none;
       text-align: center;
 }
 
-#topnav:hover .DropDownContent{
+#topnav:active .DropDownContent{
   display: inline-block;
   
 }
