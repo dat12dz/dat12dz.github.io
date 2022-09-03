@@ -21,7 +21,7 @@ body{
 .mySlides{
     margin-left: calc((100% - 1176px - 100px)/2); 
     border: 50px solid rgba(119, 119, 119, 0.315);
-
+    object-fit: none;
 
     
     width: 1176px;
@@ -74,11 +74,7 @@ color: white;
 .mySlides{
 
     width: 80%;
-    max-height: 200px;
-    border: 20px solid rgba(119, 119, 119, 0.315);
-    margin-left: calc((10%-20px)/2);
 
-    padding: 0 0 0 0;
 }
 .nextBtn{
     margin-top: 10px;
