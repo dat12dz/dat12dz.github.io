@@ -73,7 +73,9 @@ color: white;
 {
 .mySlides{
 
+    width: 80%;
 
+  
 }
 .nextBtn{
     margin-top: 10px;
