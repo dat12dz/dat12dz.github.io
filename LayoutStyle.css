@@ -12,7 +12,7 @@ body{
     font-size: 20px;
     text-align: center;
     font-weight: 800;
-    
+
 }
 .SlideShow{
     text-align: center;
@@ -20,6 +20,11 @@ body{
 }
 .mySlides{
 
+    max-height: 200px;
+    border: 20px solid rgba(119, 119, 119, 0.315);
+    margin-left: calc((10%-20px)/2);
+
+    padding: 0 0 0 0;
 }
 
 .nextBtn{
@@ -67,13 +72,14 @@ color: white;
 .mySlides{
 
     width: 80%;
-   
+    max-height: fit-content;
     border: 20px solid rgba(119, 119, 119, 0.315);
 }
 .nextBtn{
     margin-top: 10px;
     width: 50px;
     height: 50px;
+    
 }
 .SlideSHowBackground{
 
