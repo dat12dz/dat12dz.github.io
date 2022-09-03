@@ -81,7 +81,7 @@ background: none;
 }
 
 #topnav:active .DropDownContent{
-  display: inline-block;
+  display: table-cell;
   
 }
 
