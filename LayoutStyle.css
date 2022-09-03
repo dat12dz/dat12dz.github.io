@@ -19,7 +19,7 @@ body{
     
 }
 .mySlides{
-    
+    margin-left: calc((100% - 1176px - 100px)/2); 
  
     
 }
