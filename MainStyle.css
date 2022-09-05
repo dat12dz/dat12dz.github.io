@@ -215,11 +215,11 @@ header{
       background-image: url(img/Background/20220818_143854_0000.png);
         border-radius: 27px;
  
-       height: 700px;
+       height: 400px;
        background-attachment: fixed;
        width: 100%;
 
-      background-position: center;
+      background-position:bottom;
       background-repeat: no-repeat;
       background-size: cover;
       -webkit-background-origin: content-box;
@@ -379,7 +379,7 @@ header{
       display: none;
     }
     #BackVideo{
-      width: 100%;
+      background-attachment:unset;
       max-height: 200px;
       background-position:center;
       object-fit:scale-down;
