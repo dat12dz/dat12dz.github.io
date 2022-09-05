@@ -12,23 +12,17 @@ body{
     font-size: 20px;
     text-align: center;
     font-weight: 800;
-
-}
-.SlideShow{
-    text-align: center;
-    
 }
 .mySlides{
 
     border: 50px solid rgba(119, 119, 119, 0.315);
     filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.418));
     -webkit-filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.418));
-    width: 1176px;
+    width: 60%;
     height: 664px;
     margin-left: calc((100% - (1176px + 100px))/2);
     
 }
-
 .nextBtn{
 
 background: rgba(8, 8, 8, 0.2);
@@ -74,7 +68,9 @@ color: white;
 .mySlides{
 
     width: 80%;
-
+    height: 200px;
+    border: 20px solid rgba(119, 119, 119, 0.315);
+    margin-left: calc((10%-20px)/2);
   
 }
 .nextBtn{
