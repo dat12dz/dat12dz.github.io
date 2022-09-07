@@ -154,6 +154,7 @@ header{
        font-family: Times;
        font-size: 20px;
         filter: drop-shadow(3px 2px 4px #0202021e);
+        -webkit-filter:drop-shadow(3px 2px 4px #0202021e) ;
         transition: 00.25s;      
         text-decoration: none;
         color: #6d6d6d;
@@ -168,6 +169,7 @@ header{
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
        
       }
       .ButtonShowInfoVilla:hover{
