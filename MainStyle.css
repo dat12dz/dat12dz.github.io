@@ -72,7 +72,7 @@ margin-top: 14px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
 }
-.DropDownContent a:active{
+.DropDownContent a:hover{
   background-color: rgb(49, 48, 48);
   color: white;
 }
