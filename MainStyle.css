@@ -135,6 +135,7 @@ header{
         overflow-y:  auto; 
         overflow-x: hidden;
         backdrop-filter: brightness(90%);
+        -webkit-backdrop-filter:brightness(90%) ;
       border-radius: 16px;
       
      
@@ -144,7 +145,7 @@ header{
       
      .ButtonShowInfoVilla {
       border-radius: 10px;
-        position: relative;
+      
         top: 0;
         background-color: rgb(255, 255, 255);
         padding: 20px;
@@ -162,12 +163,13 @@ header{
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     
         border: 1px solid rgba(255, 255, 255, 0.48);
- 
+      
         background: rgba(255, 255, 255, 0.22);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
+      
        overflow: hidden;
+       
       }
       .ButtonShowInfoVilla:hover{
 
