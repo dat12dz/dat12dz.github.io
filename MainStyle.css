@@ -127,8 +127,6 @@ header{
         gap: 10px;
         height: 500px;
        display:grid;
-      
-    
        grid-template-columns:  repeat(3, 33%);
         border: 1px solid #cccccc73;
         padding: 10px;
@@ -137,9 +135,6 @@ header{
         backdrop-filter: brightness(90%);
         -webkit-backdrop-filter:brightness(90%) ;
       border-radius: 16px;
-      
-     
-
       background-color: #ffffff3a;
       }
       
@@ -155,19 +150,15 @@ header{
         filter: drop-shadow(3px 2px 4px #0202021e);
         -webkit-filter:drop-shadow(3px 2px 4px #0202021e) ;
         transition: 00.25s;      
+        -webkit-transition: 0.25s;
         text-decoration: none;
         color: #6d6d6d;
         background-color: #ffffffd3;
- 
         height: 451px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    
         border: 1px solid rgba(255, 255, 255, 0.48);
-      
         background: rgba(255, 255, 255, 0.22);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      
+        border-radius: 16px;      
        overflow: hidden;
        
       }
