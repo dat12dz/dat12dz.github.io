@@ -97,7 +97,7 @@ body{
     padding-top: 60px;
     font-family: 'Ubuntu', sans-serif;
     background: url(img/Background/BackgrondAlmostWhite.png);
-
+overflow-x: hidden;
  
 }
 
