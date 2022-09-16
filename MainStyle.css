@@ -335,6 +335,7 @@ header{
    .grid-container
     {
          margin-top: 50px;
+         grid-template-columns: 100%;
     }
     #topnav{
      padding:  40px 10px 40px 10px;
@@ -351,9 +352,6 @@ header{
       margin-left: auto;
       width: 100%;
    
-    }
-    .grid-container{
-      grid-template-columns: 100%;
     }
     .FooterGird{
       grid-template-columns: 100%;
