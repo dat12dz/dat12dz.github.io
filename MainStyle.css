@@ -97,7 +97,7 @@ body{
     padding-top: 60px;
     font-family: 'Ubuntu', sans-serif;
     background: url(img/Background/BackgrondAlmostWhite.png);
-overflow-x: hidden;
+    overflow-x: hidden;
  
 }
 
@@ -122,8 +122,6 @@ header{
     .grid-container {
     
       margin-top: 200px;
-       
-        
         gap: 10px;
         height: 500px;
        display:grid;
@@ -140,11 +138,9 @@ header{
       
      .ButtonShowInfoVilla {
       border-radius: 10px;
-      
-        top: 0;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(204, 204, 204, 0.356);
         padding: 20px;
-       color: aliceblue; 
+
        font-family: Times;
        font-size: 20px;
         filter: drop-shadow(3px 2px 4px #0202021e);
@@ -153,11 +149,9 @@ header{
         -webkit-transition: 0.25s;
         text-decoration: none;
         color: #6d6d6d;
-        background-color: #ffffffd3;
         height: 451px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.48);
-        background: rgba(255, 255, 255, 0.22);
         border-radius: 16px;      
        overflow: hidden;
        
