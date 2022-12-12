@@ -418,12 +418,14 @@ a{
     #ProjectFlexDisplay{
         flex-direction: column;
         height: 600px;
+        
         scroll-snap-type: x mandatory;
         gap: 10px;
         backdrop-filter: blur(0);
     }
     #FlexItems{
         flex-basis: 500px;
+        width: 93%;
         height: auto; 
         scroll-margin: 0;
         scroll-snap-align: start;
