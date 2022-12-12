@@ -39,7 +39,7 @@ header .headerBtn
     display: inline;
     left: 120px;
     top: -5px;
-
+    overflow: hidden;
 }
 header img
 {
