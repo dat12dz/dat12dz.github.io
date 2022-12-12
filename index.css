@@ -429,4 +429,7 @@ a{
         scroll-snap-align: start;
   
     }
+    body{
+        overflow-x: hidden;
+    }
 }
