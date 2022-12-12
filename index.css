@@ -63,11 +63,7 @@ color: #FFFFFF;
 margin-right: 83;
 transition: 0.25s;
 }
-headerbtn p:hover{
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius:  8px;
-}
+
 header .LogoIntro{ 
     font-family: 'Rajdhani';
    
@@ -78,6 +74,15 @@ header .LogoIntro{
     color: #FFFFFF;
     left: 143px;
     top: 5px;
+}
+.headerBtn p:hover{
+    color: #000000;
+    background-color: white;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 3px;
+    padding-right: 3px;
+    cursor:pointer;
 }
 #LogoFirstPar{
     position: a;
@@ -236,6 +241,7 @@ line-height: 122px;
 #FlexItems:hover{
     background-color: rgba(255, 255, 255,1);
     color: #000000;
+    cursor: pointer;
 }
 #FlexItems img{
     width: 100%;
@@ -411,14 +417,10 @@ a{
     .ThridPar h1{
         font-size: 50px;
     }
-    .headerBtn p:hover{
-        color: #000000;
-        background-color: white;
-    }
+   
     #ProjectFlexDisplay{
         flex-direction: column;
         height: 600px;
-        
         scroll-snap-type: x mandatory;
         gap: 10px;
         backdrop-filter: blur(0);
@@ -429,7 +431,7 @@ a{
         height: auto; 
         scroll-margin: 0;
         scroll-snap-align: start;
-  
+        
     }
     body{
         overflow: hidden;
