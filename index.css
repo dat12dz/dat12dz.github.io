@@ -1,0 +1,423 @@
+html{
+    
+
+margin-top: -10px;
+overflow-x: hidden;
+background-color: #1d1d1d;
+}
+body{
+    position: relative;
+}
+header{
+position: fixed;
+height: 66px;
+width: 850px;
+translate: calc((100vw - 850px)/2);
+top: 0px;
+
+background: rgba(0, 0, 0, 0.596);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.212);
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 0px 0px 8px 8px;
+transition:0.25s;
+z-index: 999;
+}
+header:hover{
+    background: rgb(0, 0, 0);
+}
+#SettingSvg{
+    left: 190px;
+    fill: #cacaca;
+    display: none;
+}
+header .headerBtn
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    display: inline;
+    left: 120px;
+    top: -5px;
+}
+header img
+{
+    position: absolute;
+    filter: brightness(100);
+
+    filter: drop-shadow(0px 4px 4px rgba(90, 74, 74, 0.25));
+    margin-left: 65px;
+    left: 0;
+    right: 0;
+}
+header p{
+position:relative;
+font-family: 'KoHo';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+
+display: inline;
+color: #FFFFFF;
+margin-right: 83;
+transition: 0.25s;
+}
+header p:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius:  8px;
+}
+header .LogoIntro{ 
+    font-family: 'Rajdhani';
+   
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;   
+    color: #FFFFFF;
+    left: 143px;
+    top: 5px;
+}
+#LogoFirstPar{
+    position: a;
+    filter: brightness(100);
+    margin-left:calc((70%)/2) ;
+    width: 30%;
+    height: auto;
+}
+#introTitle{font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;font-size: 50px;line-height: 82px;align-items: center;text-align: center;color: #FFFFFF;}
+
+#svgwrapper{
+    position: relative;
+    width:100vw;
+    
+    background: linear-gradient(268.22deg, #00000081 0.99%, rgba(56, 56, 56, 0.795) 98.84%),url(Img/FirstParBg.jpg);
+    padding-bottom: 30vh;
+    padding-top: 30vh;
+    clip-path:  polygon(100% 0, 100% 100%, 150px 100%, 0 90%, 0 0);
+    overflow: hidden;
+    mask-size: cover;
+    mask-position: centers;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+#IntroPar{
+font-family: 'KoHo';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+#gridParContainer{
+    position:relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-content: center;
+    text-align: center;
+    padding-left: 30px;
+
+}
+
+#Paragraph2Title{
+font-family: 'Rajdhani';
+font-style: normal;
+font-weight: 700;
+font-size: 96px;
+line-height: 122px;
+
+align-items: center;
+text-align: center;
+color: #000000;
+
+}
+#Paragraph2MainPart{
+font-family: 'KoHo';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+#Grid_TextBox{
+    width:55%   ; 
+    margin-left:calc((45% - 100px)/2) ;
+    border: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 50px;
+    backdrop-filter:blur(3px);
+    border-radius: 10px;
+
+}
+.SecondPar {
+background:rgb(253, 233, 48) url(svg/VectorPar2Back.svg);
+clip-path: polygon(100% 0, 100% 79%, 84% 100%, 0 100%, 0 0);
+background-position: 40px -300px;
+padding-top: 240px;
+background-attachment: fixed;
+padding-bottom: 300px;
+margin-top: -140px;
+z-index: 1;
+}
+#nameTag{
+    position:relative;margin-top:-80px; right: 0;left: 60px; margin-left: calc(0% - 412px);
+}
+#DecLine{
+    position: absolute;
+    top: -10px;
+    left: 50px;
+}
+#DecLine2{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+}
+#PersonPic{
+    max-width: 65%;
+    z-index: -1;
+}
+
+.ThridPar{
+    text-align: center;
+    background:linear-gradient(268.22deg, #1d1d1dcc 0.99%, rgba(0, 107, 179, 0.726) 98.84%) ,url(Img/BackgroundPar3.webp);
+    color: #FFFFFF;
+    padding-top: 400px;
+    margin-top: -220px;
+ 
+    background-size: cover;
+    padding-bottom: 250px;
+}
+.ThridPar h1{
+    font-family: 'Rajdhani';
+font-style: normal;
+font-weight: 700;
+font-size: 96px;
+line-height: 122px;
+}
+#ProjectFlexDisplay{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-y: scroll;
+    height: 440px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 40px;
+    margin-top: 100px;
+ 
+    backdrop-filter: blur(5px);
+
+}
+#FlexItems{
+    list-style: none;
+    height: 408px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 512px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: 0.25s;
+}
+#FlexItems:hover{
+    background-color: rgba(255, 255, 255,1);
+    color: #000000;
+}
+#FlexItems img{
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+}
+#FlexItems h2{
+    font-family: 'Rajdhani';
+    font-size: 30px;
+    
+    
+}
+#FlexItems p{
+    font-family:'KoHo';
+    font-size: 20px;
+
+}
+footer{
+    padding-top: 60px;
+
+
+ 
+    background-color: #1d1d1d;
+    box-shadow: 0px -4px 3px #1d1d1d;
+    align-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+footer p{
+font-family: 'KoHo';
+}
+footer img{
+    filter:  brightness(100);
+}
+#FooterGridContainer img{
+  margin-top: 30px;
+}
+#FooterGridContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+a{
+    position: relative;
+    font-family: 'KoHo';
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+#nameTag_text
+{
+    margin-top:-80px ;margin-left: 70px;font-family: 'KoHo';font-size: 30px;font-weight: 400;
+}
+@media only screen and (max-width: 600px)
+{
+    .SecondPar{
+        clip-path: polygon(100% 0, 100% 1060px, 300px 100%, 0 100%, 0 0);
+        padding-bottom: 100px;
+    }
+}
+@media only screen and (max-width: 1000px)
+{
+
+    body{
+        overflow-x:unset;
+    }
+    header .headerBtn
+    {
+        position: relative;
+        display: none;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        background-color: rgba(0, 0, 0, 0.596);
+        left: 0;
+        top: 14px;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+    }
+        header .LogoIntro{ 
+        font-family: 'Rajdhani';
+    
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;   
+        color: #FFFFFF;
+        left: 100px;
+        top: 10px;
+    }
+    header{
+    position: fixed;
+        height: 66px;
+        width: 250px;
+        translate: calc((100vw - 250px)/2);
+        top: 0px;
+        backdrop-filter: blur(0);
+    }
+    header p {
+
+        padding-right: 0;
+    }
+    header img
+    {
+
+        margin-left: 20px;
+
+    }
+    
+    #SettingSvg
+    {
+        display: inline;
+    }
+    #svgwrapper{
+        padding-top: 100px;
+        clip-path: polygon(100% 0, 100% 100%, 64px 100%, 0 90%, 0 0);
+    }
+    #gridParContainer{
+        grid-template-columns: 100%;
+        grid-template-rows:500px;
+        padding-left: 0px;
+    }
+    
+    #introTitle{
+        font-size: 30px;
+        line-height:normal;
+    }
+    #IntroPar{
+        font-size: 16px;
+        line-height:normal;
+    }
+
+    #Grid_TextBox {
+        width: 80%;
+        margin-left: calc((20% - 20px)/2);
+        border: 1px solid rgba(122, 122, 122, 0.5);
+        padding: 10px;
+        backdrop-filter: blur(0);
+        border-radius: 10px;
+    }
+    #Paragraph2Title{
+        font-size: 30px;
+        line-height:normal;
+    }
+    #Paragraph2MainPart{
+        font-size: 16px;
+        line-height:normal;
+    }
+    #nameTag{
+
+        height: auto;
+        position: relative;
+        left: 200px;
+        z-index: 0;
+    }
+    #nameTag_text{
+        margin-top:-80px ;margin-left: 20px;font-size: 30px;
+        
+    }
+    .SecondPar{
+        clip-path: polygon(100% 0, 100% 90%, 80% 100%, 0 100%, 0 0);
+        padding-bottom: 100px;
+    }
+    #DecLine2{
+        display:none;
+    }
+    
+    header:hover .headerBtn{
+        display: grid;
+    }
+    .ThridPar h1{
+        font-size: 50px;
+    }
+    #ProjectFlexDisplay{
+        flex-direction: column;
+        height: 600px;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        backdrop-filter: blur(0);
+    }
+    #FlexItems{
+        flex-basis: 500px;
+        height: auto; 
+        scroll-margin: 0;
+        scroll-snap-align: start;
+  
+    }
+}

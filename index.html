@@ -1,287 +1,125 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
-<head>
-    <link rel="stylesheet" href="MainStyle.css">
-    <title> Villa Web</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/img/LogoTransparent.png" type="image/x-icon">
-</head>
-
-<body>
-     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
-    
-    
     <header>
-        <button style="background-color: transparent;" onclick = HomeClick()>
-            <img style="margin-top: 5px;" src="logo/LogoTransParent.png" width="64" height="64">
-        </button>
-        <script>
-            function HomeClick()
-            {
-                open("index.html");
-            }
-        </script>
-        <div id="topnavbase">
-            <div id="topnav">
-                <button>
-                    <strong>
-                        Địa điểm
-                    </strong>
-
-                </button>
-                <div class="DropDownContent">
-                    <div id="location">
-
-                    </div>   
-                    <p>
-                        <strong>
-                            Giá tiền (triệu)
-                        </strong>
-                    </p>
-                    <a href="search.html?price=5-7">5 - 7</a>
-                    <a href="search.html?price=7-9">7 - 9</a>
-                    <a href="search.html?price=9-11">9 - 11</a>
-                    <a href="search.html?price=u11">trên 11</a>
-
-                </div>
-
-            </div>
-            <div id="topnav">
-                <button>
-                    <strong>
-                        Lọc
-                    </strong>
-                </button>
-                <div class="DropDownContent">
-                    <p>
-                        <strong>
-                            Lọc theo người
-                        </strong>
-                    </p>
-                    <a href="search.html?people=5-7">5 - 7 người</a>
-                    <a href="search.html?people=6-10">6 - 10 người</a>
-                    <a href="search.html?people=10-15">10 - 15 người</a>
-                    <a href="search.html?people=U15">Trên 15 người</a>
-                </div>
-            </div>
+        <div>
+            <img id="Logo" width="64" height="64" src="Img/LogoTransparent.png"></img>
+        </div>         
+           
+             <p class="LogoIntro">Datdau<br>Technologies</p>
+         <img id="SettingSvg" src="svg/Setting.svg">
+        <div class="headerBtn">
+            <p> Trang chủ </p>
+            <p> Các dự án </p>
+            <p> Thành viên </p>
+        </div>
     </header>
+    <body>
+<div class="1thPar">
 
+     <div id="svgwrapper">
+      
+        <div id="gridParContainer">
+            <img id="LogoFirstPar" width="300" height="300" src="Img/LogoTransparent.png"></img>
+            <div id="Grid_TextBox">
+            <p id="introTitle">DATDAU TECHNOLOGIES</p>
+            <p id="IntroPar">Chúng tôi chuyên cung cấp các giải pháp
+                về phần mềm máy tính, các loại dịch vụ trang web,đồ họa máy tính 2D,3D tạo front end web...
+                <br>
+                
+                
+                Cứ hỏi chúng tôi. Nếu nó trong tầm hiểu biết của chúng tôi thì chúng tôi có thể cung cấp cho bạn giải pháp</p>
+            </div>
+       </div>
+        </img>
+        </svg>
 
-
-    <img  id="BackVideo">
-       
-</img>
-
-
-    <div class="MainTitle">
-        <p><p>
-        <p style=" font-size: 20px; font-family: 'Courier New', Courier, monospace; "> Liên hệ ngay để được thuê </p>
     </div>
-    </div>
+ </div>
+ <div class="SecondPar"">
+    <div id="">
+        <div id="gridParContainer">
+            <img id="DecLine"  src="svg/Line LLineDecorate.svg">
+            <img id="DecLine2"  src="svg/Line LLineDecorate.svg">
+            <div id="Grid_TextBox">
 
+                <p id="Paragraph2Title">MEMBERS</p>
+                <p id="Paragraph2MainPart">Hiện tại chúng tôi mới chỉ có 1 thành viên duy nhất
+                    làm chủ studio Datdau Technologies là anh Nguyễn Đức Đạt,Hiện anh đang là sinh viên năm nhất của trường Đại học Khoa Học và Công Nghệ Hà Nội, Ngoài ra còn rất  nhiều hậu cần xử lý vấn đề cho studio đằng sau</p>
+             </div>  
+             <div>
+            
+                <img id="PersonPic" src="svg/DatDauPicDatDauPicture.svg" >
+                <div  id="nameTag">
+                    <img src="svg/VectorNameTag.svg" width="412px">
+                    <p id="nameTag_text">Nguyễn Đức Đạt</p>
+                </div>
+                
+             </div>
+            
 
-    
-    <div style="margin-top: 100px;">
-       
-                <h1 style="color: black; text-align:center ;  font-size: 50px; 
-                "> Luxury villa
-                    <p style="color: black; text-align:center ;  font-size: 25px;font-family:  'Alumni Sans Pinstripe', sans-serif;
-                    "> .....</p>
-                </h1>
-        
-    </div>
-
-    
-    <br>
-
-    <form id=GirdShowVillaInfo class="grid-container">
-    </form>
-
-    <script src="DataDef.js"></script>
-    <script src="ShowLocation.js"></script>
-
-    <script>
-    var i = 0;
-        VillaDataBase.VillaList.forEach(ShowVillaInfo);
-        function ShowVillaInfo(VillaInfo) {
-            if (i < 6)
-            {
           
-            var MainPicture = VillaInfo.MainPicLink;
-            var VillaViewPage = VillaInfo.hrefLink;
-            document.getElementById("GirdShowVillaInfo").innerHTML += '<a href= ' + "Info.html?" + "link=" + encodeURIComponent(VillaInfo.WebLink) + "&villaname=" +encodeURIComponent(VillaInfo.VillaName) + ' class="ButtonShowInfoVilla">' +
-                ' <image id = "ShowVillaImg" src= ' + encodeURIComponent(MainPicture) + ' alt =' + VillaInfo.VillaName +'>'+
-                '<p  class="VillaName">'  + VillaInfo.VillaName +  '</p>'+
-                
-                    '  <p class="VillaInfo">' + VillaInfo.description;
-                i++;
-                
-            }
-                   
-        }
-
-    </script>
-
-    <div id = "GreatCustomerService" style="margin-top: 400px; padding-top:200px ; padding-bottom: 200px ;
-     overflow: hidden; background-image: url(/img/Background/abstract-blur-luxury-hotel-lobby-background_1339-98418.webp);
-     object-fit:cover;  background-attachment: fixed; border-radius: 9px;text-align: center; back" >
-         <svg class="line" height="1px" width="33%">
-            <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 255, 255);stroke-width:2px" >
-
-         <h1 style=" color:rgb(255, 255, 255) ; font-size: 50px ;top :15px;display: inline ; margin-left: 9px;" 
-         >Great Customer Service
-        
-
-        </h1>
-    </svg>
-    <svg class="line" height="1px" width="33%" >
-<line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 255, 255);stroke-width:2px" />
-</svg>
+        </div>
     </div>
+</div>
+<div class="ThridPar">
+    <h1>PROJECT</h1>
+    <p id="Paragraph2MainPart" style="color: white;">Các dự án mà chúng tôi đã từng làm trước đây.<br> Click vào dự ắn đã hoàn thành để xem thêm chi tiết</p>
+    <div id="ProjectFlexDisplay">
+        <div id="FlexItems" onclick=window.open("https://www.facebook.com/groups/VietDesigner.Net/permalink/4432814616805017/")> 
+            <img src="img/ProjectNSl.jpg" ></img>
+            <h2>THPT Ngô Sĩ Liên</h2>
+            <p>Dự án thiết kế lại trường THPT Ngô Sĩ Liên,Bắc Giang.Đây là dự án đầu tay của studio<br> Thể Loại: Dựng hình trong không gian 3D<br>Trạng thái: Đã hoàn thành</p>
+        </div>
+        <div id="FlexItems"> 
+            <img src="img/ProjectNobitaSunday.jpg" onclick=window.open("https://www.facebook.com/stories/378762927354573/?source=story_tray")></img>
+            <h2>Nobita Sunday</h2>
+            <p>Dự án thiết kế lại căn phòng của Nobita. Kết hợp hài hòa giữa ánh sáng giữa nhân vật 2D với không gian 3D<br>Thể Loại: 2D và 3D<br> Trạng thái: Đã hoàn thành</p>
+        </div>
+        <div id="FlexItems"> 
+            <img src="img/ProjectToolTiktok.png"></img>
+            <h2>Tool nuôi Tiktok</h2>
+            <p>Dự án làm ool nuôi tài khoản tiktok(bot tự động like share,follow giống người thật)<br> Thể loại: Lập trình tự động <br> Trạng thái: Đang hoàn thiện</p>
+        </div>
+        <div id="FlexItems"> 
+            <img src="img/ProjectGameShooting" ></img>
+            <h2>Project G</h2>
+            <p>Dự án game bắn súng đối kháng với đồ họa anime<br> Thể loại: Lập trình Game <br> Trạng thái: Đang lên ý tưởng</p>
+        </div>
+    </div>
+</div>
 
-
-
-
-
-     <div class="Service" style="margin-top: 300px;padding-bottom: 60px;overflow: hidden;">
-
-            <h1 style=" color:rgb(73, 73, 73) ; font-size: 50px; text-align: center; ">
-                Our SERVICE
-            </h1>
-            
-            <svg height="1px" width="100%" style="transform: translate(0,-30px);" >
-                <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgba(163, 163, 163, 0.527);stroke-width:2px" />
-              </svg>
-              
-            <div class="ServiceGirdShow" style="display:grid; overflow:1inherit; margin-top: 80px;">
-
-                        <button class="ServiceItem">
-                            <svg height="100" width="100" >
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
-                             
-                              </svg>
-                              <svg class = "MainIcon" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                                <path d="M13.3 16.65q-1.45 0-2.45-1-1-1-1-2.45 0-1.45 1-2.45 1-1 2.45-1 1.45 0 2.45 1 1 1 1 2.45 0 1.45-1 2.45-1 1-2.45 1ZM7 44q-1.25 0-2.125-.875T4 41V25.35h6.1v-2.8q0-1.55 1.075-2.65 1.075-1.1 2.625-1.1.95 0 1.725.4.775.4 1.425 1.1l2.85 3.2q.4.45.925.9t1.275.95h22V41q0 1.25-.875 2.125T41 44Zm30.1-24 .05-.6q.15-2-.425-3.15T35.1 13.6q-1.2-1.7-1.725-3.55-.525-1.85-.325-3.6L33.1 6h2.7l-.05.7q-.1 1.75.25 2.85t1.5 2.6q1.25 1.6 1.9 3.625.65 2.025.45 3.775l-.05.45Zm-8 0 .05-.6q.15-2-.425-3.15T27.1 13.6q-1.2-1.7-1.725-3.55-.525-1.85-.325-3.6L25.1 6h2.7l-.05.7q-.1 1.75.25 2.85t1.5 2.6q1.25 1.6 1.9 3.625.65 2.025.45 3.775l-.05.45ZM34 41h5.5V28.35H34Zm-8.5 0H31V28.35h-5.5ZM17 41h5.5V28.35H17Zm-8.5 0H14V28.35H8.5Z"/>
-                                </svg>
-                            <p>
-                                Xông hơi
-                            </p>
-                            <p class="ServiceDes">
-                                Vùi mình vào trong căn phòng nóng bức lên đến hơn 40 độ C, giúp bạn thải độc vào xoa dịu nhưng cơn mệt mỏi sau khi chơi đùa thỏa thích. Tắm hơi giúp cải thiện lưu thông máu, giảm căng thẳng, cải thiện đường thở, linh hoạt các khớp.....
-                            </p>
-                        </button>
-                        <button class="ServiceItem">
-                            <svg height="100" width="100" >
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
-                              </svg>
-                              <svg class="MainIcon" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M4 46v-3h2q1.55 0 3.075-.525Q10.6 41.95 12 40.55q1.4 1.4 2.925 1.925Q16.45 43 18 43q1.5 0 3.075-.55 1.575-.55 2.925-1.9 1.45 1.4 2.95 1.925Q28.45 43 30 43q1.5 0 3.075-.55 1.575-.55 2.925-1.9 1.35 1.35 2.925 1.9Q40.5 43 42 43h2v3h-2q-1.45 0-2.975-.425Q37.5 45.15 36 44q-1.5 1.15-3.025 1.575Q31.45 46 30 46q-1.45 0-2.975-.425Q25.5 45.15 24 44q-1.5 1.15-3.025 1.575Q19.45 46 18 46q-1.45 0-2.975-.425Q13.5 45.15 12 44q-1.5 1.15-3.025 1.575Q7.45 46 6 46Zm14-7.8q-1.65 0-3.25-.9T12 34.95q-.65.7-1.55 1.375T8.7 37.55q-1.95-.4-4.225-1.075Q2.2 35.8 0 35q2.65-1.05 6.875-2.1t7.775-1.65l2.8-8.95q.4-1.4 1.7-1.95 1.3-.55 2.55.1l5.3 2.8 6.05-3.2 3.5-8.1-1-2.65 2.4-5.25L43.4 6.5l-2.35 5.25-2.65 1-7.8 18.15q4.55.55 9.55 1.75 5 1.2 7.85 2.35-2.2.8-4.475 1.475-2.275.675-4.225 1.075-.85-.55-1.75-1.225T36 34.95q-1.15 1.45-2.75 2.35-1.6.9-3.25.9t-3.25-.9q-1.6-.9-2.75-2.35-1.15 1.45-2.75 2.35-1.6.9-3.25.9Zm10.45-7.55 2.6-6.2-4.05 2.1-3.8-1.9-1.8 5.85H24q1.15 0 2.225.025 1.075.025 2.225.125ZM24 18.3q-1.5 0-2.575-1.075-1.075-1.075-1.075-2.575 0-1.5 1.075-2.575Q22.5 11 24 11q1.5 0 2.575 1.075 1.075 1.075 1.075 2.575 0 1.5-1.075 2.575Q25.5 18.3 24 18.3Z"/></svg>
-
-                            <p>
-                                Bia
-                            </p>
-                            <p class="ServiceDes">
-                                Bia giúp bạn có những khoảng thời gian tuyệt vời và vui vẻ bên người thân, môn thể thao giúp bạn cải thiện khả năng tập trung, tăng khả năng hoạt động của não bộ, quan trọng là những pha highlight trên bàn đấu
-                            </p>
-                        </button>
-                        <button class="ServiceItem">
-                            <svg height="100" width="100" >
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
-                              </svg>
-                              <svg class = "MainIcon"  xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M32.55 35.05q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6q-1.8 0-3.25-1.075t-1.95-2.825H12.7l-2.05 3.15q-.35.55-.925.7-.575.15-1.075-.2-.55-.4-.725-.975-.175-.575.175-1.125l9.1-13.8q-3.75-1.45-6.075-4.525T8.4 18.25h27.3q-.4 4.05-2.8 7.1t-6 4.5l2.9 4.5q-.7.35-1.35.8-.65.45-1.05 1l-3.55-5.5q-.4.1-1.85.1h-.9q-.5 0-.85-.1l-5.55 8.5h12.65q.5-1.8 1.925-2.95 1.425-1.15 3.275-1.15Zm0 8q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775-.725-.725-1.775-.725-1.05 0-1.775.725-.725.725-.725 1.775 0 1.05.725 1.775.725.725 1.775.725ZM22 27.75q3.25 0 5.925-1.75t3.975-4.75H12.2q1.2 3 3.875 4.75T22 27.75Zm-3.75-11.4q.25-1.4-.075-2.45-.325-1.05-1.475-2.6-1.1-1.45-1.4-2.575Q15 7.6 15.25 6h1.5q-.15 1.65.15 2.625.3.975 1.35 2.375 1 1.4 1.35 2.575.35 1.175.15 2.775Zm3.85 0q.15-1.8-.15-2.775-.3-.975-1.35-2.275-1.1-1.4-1.425-2.55Q18.85 7.6 19.1 6h1.5q-.25 1.3.05 2.35T22.1 11q1 1.35 1.325 2.55.325 1.2.175 2.8Zm3.8 0q.2-1.75-.1-2.75-.3-1-1.35-2.3-1.15-1.45-1.475-2.6Q22.65 7.55 22.9 6h1.5q-.25 1.3.075 2.35T25.95 11q1 1.3 1.325 2.5.325 1.2.125 2.85ZM22 27.75Z"/></svg>
-                            <p>
-                                BBQ
-                            </p>
-                            <p class="ServiceDes">
-                                  Được tự mình lựa chọn những món ăn yêu thích chất đầy bàn thì còn gì thoả mãn hơn, với hệ thống nướng ăn ngoài trời giúp bạn có khoảng thời gian vui vẻ bên gia đình và người thân. Hòa mình vào với thiên nhiên núi rừng gợi cho bạn một cuộc sống vô lo vô nghĩ.
-                            </p>
-                        </button>
-                        <button class="ServiceItem">
-                            <svg height="100" width="100" >
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
-                              </svg>
-                              <svg class = "MainIcon"  xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M22 42q-5 0-8.5-3.5T10 30V19.2l8.8 8.8-2.1 2.15-3.7-3.7V30q0 3.75 2.65 6.375T22 39q3.75 0 6.375-2.625T31 30v-6.7q-1.75-.55-2.875-2.025Q27 19.8 27 18q0-1.8 1.125-3.275Q29.25 13.25 31 12.7V4h3v8.7q1.75.55 2.875 2.025Q38 16.2 38 18q0 1.8-1.125 3.3-1.125 1.5-2.875 2V30q0 5-3.5 8.5T22 42Zm10.5-21.5q1.05 0 1.775-.75Q35 19 35 18q0-1.05-.725-1.775-.725-.725-1.775-.725-1 0-1.75.725T30 18q0 1 .75 1.75t1.75.75Z"/></svg>
-                            <p>
-                                Câu cá
-                            </p>
-                            <p class="ServiceDes">
-                                Câu cá là bộ môn cực "hót" cho những người rèn luyện tính kiên nhẫn. Khi bạn cần xả stress thì tin chúng tôi đi, đây là bộ môn không thể thiếu. Xả stress: điều hòa hơi thở, nhịp tim, tâm trạng; cải thiện sự tập trung là những gì câu cá có thể mang lại trong những ngày buồn chán của bạn
-                            </p>
-                        </button>
-                        <button class="ServiceItem">
-                            <svg height="100" width="100" >
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
-                              </svg>
-                              <svg class = "MainIcon"  xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M4 42v-3.2q1.8-.15 2.875-1.05t3.375-.9q2.3 0 3.75 1.075Q15.45 39 17.35 39q1.9 0 3.125-1.075T24 36.85q2.3 0 3.75 1.075Q29.2 39 31.1 39q1.9 0 3.15-1.075t3.55-1.075q2.3 0 3.35.9 1.05.9 2.85 1.05V42q-1.75-.15-3.025-1.125T37.8 39.9q-1.9 0-3.25 1.05T31.1 42q-2.1 0-3.65-1.05Q25.9 39.9 24 39.9q-1.9 0-3.325 1.05Q19.25 42 17.15 42q-2.1 0-3.55-1.05-1.45-1.05-3.35-1.05-1.9 0-3.2.975Q5.75 41.85 4 42Zm0-9.4v-3q1.8-.15 2.875-1.025Q7.95 27.7 10.25 27.7t3.65.95q1.35.95 3.25.95t3.225-.95Q21.7 27.7 24 27.7t3.65.95q1.35.95 3.25.95t3.25-.95q1.35-.95 3.65-.95t3.35.875Q42.2 29.45 44 29.6v3q-1.75-.15-3.025-1.125T37.8 30.5q-1.9 0-3.25 1.05T31.1 32.6q-2.1 0-3.65-1.05Q25.9 30.5 24 30.5q-1.9 0-3.225 1.05-1.325 1.05-3.425 1.05-2.1 0-3.65-1.05-1.55-1.05-3.45-1.05-1.9 0-3.2.975Q5.75 32.45 4 32.6Zm10.4-10.4 6.75-6.75-2.7-2.7q-1.7-1.7-3.45-2.275-1.75-.575-4.45-.575V5.95q3.6 0 5.925.9 2.325.9 4.525 3.1L33.65 22.6q-.55.45-1.275.65-.725.2-1.475.2-1.9 0-3.275-1.05T24 21.35q-2.25 0-3.6 1.05t-3.25 1.05q-.9 0-1.625-.35t-1.125-.9Zm19-16.05q2 0 3.375 1.375T38.15 10.9q0 2-1.375 3.375T33.4 15.65q-2 0-3.375-1.375T28.65 10.9q0-2 1.375-3.375T33.4 6.15Z"/></svg>
-                            <p>
-                                Bơi lội
-                            </p>
-                            <p class="ServiceDes">
-                                Đi chơi nhưng vẫn muốn rèn luyện sức khỏe thì môn thể thao phù hợp nhất không gì hơn là bơi lội. Vừa rèn luyện sức khỏe vừa cải thiện tâm trạng lại còn giúp giấc ngủ của bạn ngon hơn- những điều cần thiết cho một chuyến đi chơi hơn bao giờ hết
-                            </p>
-                        </button>
-                        <button class="ServiceItem">
-                            <svg height="100" width="100" >
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="gray" />
-                              </svg>
-                              <svg class="MainIcon" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M9.2 13.4q-.7-.75-.95-1.7T8 9.75q0-2.4 1.65-4.075Q11.3 4 13.7 4t4.05 1.675Q19.4 7.35 19.4 9.75q0 1-.25 1.95t-.95 1.7ZM19.8 44q-3.2 0-5.475-2.25-2.275-2.25-2.275-5.5h-1.7l-2-20.8h10.7l-2 20.8h-2q0 1.95 1.4 3.35 1.4 1.4 3.35 1.4 1.95 0 3.325-1.4 1.375-1.4 1.375-3.35v-24.5q0-3.25 2.25-5.5T32.25 4q3.25 0 5.5 2.25t2.25 5.5V44h-3V11.75q0-1.95-1.4-3.35Q34.2 7 32.25 7 30.3 7 28.9 8.4q-1.4 1.4-1.4 3.35v24.5q0 3.25-2.25 5.5T19.8 44Zm-6.75-10.75h1.3l1.4-14.8h-4.1Zm1.3-14.8h-2.7 4.1Z"/></svg>
-                            <p>
-                                Karaoke
-                            </p>
-                            <p class="ServiceDes">
-                                Những bản tình ca sôi động là điều không thể thiếu mỗi buổi tối muộn. Karaoke chính là sân chơi dành cho những "ca sĩ chuyên nghiệp" thể hiện. Hãy xả hết những stress vào những lyrics đầy cuốn hút đó
-                            </p>
-                        </button>
-
-            </div>
-
-     </div>
-     <footer>
-        <div class="FooterBackdropFiler">
-            <div class= "FooterGird" style="display:grid;">
-                <div >
-                    <p class = "TitleFooterGird"> Reservation  </p>
-                    <p class="DesFooterGird"> Liên hệ với chúng tôi:</p>
-                    <br>
-                    <a style="padding-right: 0px ;" href="tel:0825685636">0825685636</a>
-                    
-                    <a href="tel:0393030453">0393030453</a>
-                </div>
-                <div >
-                    <p class = "TitleFooterGird"> Address  </p>
-                    <p class="DesFooterGird"> Tòa nhà N01-T3 khu ngoại giao đoàn quận Bắc Từ Liêm <br> Hà Nội</p>
+</div>
+  
+    
+    </body>
+    <footer>
+        <img src="Img/LogoTransparent.png" width="256px">
+        
+        <div id="FooterGridContainer">
+            <div>
                 
+                <img src="svg/phone (1).svg" width="64"></img>
+                <div>
+                    <a href="tel:0983230121">0983230121</a>
                 </div>
-                <div >
-                    <p class = "TitleFooterGird"> Social  </p>
-                    <button style="background-color: rgba(0, 0, 0, 0); border: 0;" onclick=window.open('https://www.facebook.com/Angel-Group-Thu%C3%AA-Villa-Resort-109909395152513/');>
-                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" width="64" height="64">
-                        <path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z" style="fill: white"></svg>
-                    </button>
-                    <button style="background-color: rgba(255, 255, 255, 0); border: 0;" onclick=window.open('https://instagram.com/angelgroupluxury?igshid=YmMyMTA2M2Y=');>
-                        <svg width="64px" height="64px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                            <g>
-                                <path d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z" fill="white"></path>
-                            </g>
-                        </svg>
-                    </button>
-                </div>
+                
             </div>
-
-             <img width="200"  src="img/LogoTransparent.png" alt="Can't Load" style="filter:contrast(2000); max-width: 100%; object-fit:scale-down; z-index:-99 ;
-                margin-top: 0px;display: inline-block;"></img>
-            
+            <div>
+                <img src="svg/icons8-facebook.svg" width="64"></img>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100087670004096">Đạt Đậu</a>
+                </div>
             </div>
         </div>
+        <p>Địa chỉ: Số 1,Đường Võ Chí Công, Nghĩa Đô, Cầu Giấy,Hà Nội</p>
+        
+        <p>© 2022 DatDau Technologies, Inc. All Rights Reserved.</p>
+        
+        
     </footer>
-
-
-</body>
 </html>
+ 
