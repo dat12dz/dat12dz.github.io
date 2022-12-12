@@ -39,6 +39,7 @@ header .headerBtn
     display: inline;
     left: 120px;
     top: -5px;
+
 }
 header img
 {
@@ -62,7 +63,7 @@ color: #FFFFFF;
 margin-right: 83;
 transition: 0.25s;
 }
-header p:hover{
+headerbtn p:hover{
     background-color: #FFFFFF;
     color: #000000;
     border-radius:  8px;
@@ -311,6 +312,7 @@ a{
         top: 14px;
         text-align: center;
         border-radius: 0 0 8px 8px;
+ 
     }
         header .LogoIntro{ 
         font-family: 'Rajdhani';
@@ -332,8 +334,11 @@ a{
         backdrop-filter: blur(0);
     }
     header p {
-
+        margin-right: 0;
         padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
     }
     header img
     {
@@ -405,6 +410,10 @@ a{
     }
     .ThridPar h1{
         font-size: 50px;
+    }
+    .headerBtn p:hover{
+        color: #000000;
+        background-color: white;
     }
     #ProjectFlexDisplay{
         flex-direction: column;
