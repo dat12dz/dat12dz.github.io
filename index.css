@@ -421,6 +421,7 @@ a{
     .SecondPar{
         clip-path: polygon(100% 0, 100% 90%, 80% 100%, 0 100%, 0 0);
         padding-bottom: 100px;
+        background-attachment: unset;
     }
     #DecLine2{
         display:none;
