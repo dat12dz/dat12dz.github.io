@@ -86,8 +86,8 @@ header .LogoIntro{
 #LogoFirstPar{
     position: a;
     filter: brightness(100);
-    margin-left:calc((70%)/2) ;
-    width: 30%;
+    margin-left:calc((50%)/2) ;
+    width: 50%;
     height: auto;
 }
 #introTitle{font-family: 'Rajdhani';
@@ -315,7 +315,10 @@ a{
 }
 @media only screen and (max-width: 1000px)
 {
-
+    footer img{
+        filter:  brightness(100);
+        width: 35%;
+    }
     body{
         overflow-x:unset;
     }
