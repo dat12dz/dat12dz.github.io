@@ -1,6 +1,4 @@
 html{
-    
-
 margin-top: -10px;
 overflow-x: hidden;
 background-color: #1d1d1d;
@@ -168,11 +166,11 @@ color: #000000;
 
 }
 .SecondPar {
-background:rgb(253, 233, 48) url(svg/VectorPar2Back.svg);
+background:rgb(253, 233, 48) url(Img/VectorPar2Back.png);
 clip-path: polygon(100% 0, 100% 79%, 84% 100%, 0 100%, 0 0);
 background-position: 40px -300px;
 padding-top: 240px;
-
+background-attachment: fixed;
 padding-bottom: 300px;
 margin-top: -140px;
 z-index: 1;
