@@ -4,6 +4,13 @@
 <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400&display=swap" rel="stylesheet">
 <link rel=icon type="image/x-icon" href="Img/LogoTransparent.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    function OpenHome()
+    {
+        if (window.location.pathname != '/index.html')
+        window.location.href ='index.html';
+    }
+</script>
 <html>
     <title>Đạt Đậu Techonologies</title>
     <header>
@@ -14,9 +21,9 @@
              <p class="LogoIntro">Datdau<br>Technologies</p>
          <img id="SettingSvg" src="svg/Setting.svg">
         <div class="headerBtn">
-            <p> Trang chủ </p>
-            <p> Các dự án </p>
-            <p> Thành viên </p>
+            <p onclick="OpenHome()"> Trang chủ </p>
+            <p onclick="OpenHome();document.getElementById('ProjectFlexDisplay').scrollIntoView(); "> Các dự án </p>
+            <p onclick="OpenHome();document.getElementById('Paragraph2Title').scrollIntoView();"> Thành viên </p>
         </div>
     </header>
     <body>
@@ -27,9 +34,9 @@
         <div id="gridParContainer">
             <img id="LogoFirstPar" width="300" height="300" src="Img/LogoTransparent.png"></img>
             <div id="Grid_TextBox">
-            <p id="introTitle">DATDAU TECHNOLOGIES</p>
+            <p id="introTitle">WHY DATDAU TECHNOLOGIES?</p>
             <p id="IntroPar">Chúng tôi chuyên cung cấp các giải pháp
-                về phần mềm máy tính, các loại dịch vụ trang web,đồ họa máy tính 2D,3D tạo front end web...
+                về phần mềm máy tính, các loại dịch vụ trang web,đồ họa máy tính 2D,3D tạo frontend web,backend web...
                 <br>         
                 Cứ hỏi chúng tôi. Nếu nó trong tầm hiểu biết của chúng tôi thì chúng tôi có thể cung cấp cho bạn giải pháp</p>
             </div>
@@ -59,9 +66,6 @@
                 </div>
                 
              </div>
-            
-
-          
         </div>
     </div>
 </div>
@@ -82,7 +86,7 @@
         <div id="FlexItems"  onclick=window.open("https://www.facebook.com/stories/378762927354573/?source=story_tray")> 
             <img src="Img/ProjectBuff.jpg"></img>
             <h2>Đạt Đậu Buff</h2>
-            <p>Dự án tool tăng view,tăng follow facebook, tăng like facebook<br>Thể Loại:lập trình tool<br> Trạng thái: Đang phát triển</p>
+            <p>Dự án tool tăng view,tăng follow facebook, tăng like facebook<br>Thể Loại:Lập trình tool<br> Trạng thái: Đang phát triển</p>
         </div>
         <div id="FlexItems"  onclick=window.open("ToolTiktok.rar")> 
             <img src="Img/ProjectToolTiktok.png"></img>
@@ -121,7 +125,7 @@
             </div>
         </div>
         <p>Địa chỉ: Số 1,Đường Võ Chí Công, Nghĩa Đô, Cầu Giấy,Hà Nội</p>
-        <p>© 2022 DatDau Technologies, Inc. All Rights Reserved.</p>
+        <p>© 2022 DatDau Technologies. All Rights Reserved.</p>
     </footer>
 </html>
  
