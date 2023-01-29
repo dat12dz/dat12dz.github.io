@@ -167,7 +167,7 @@ color: #000000;
 
 }
 .SecondPar {
-background:rgb(253, 233, 48) url(Img/VectorPar2Back.png);
+background:rgb(253, 233, 48) url(svg/VectorPar2Back.svg);
 clip-path: polygon(100% 0, 100% 79%, 84% 100%, 0 100%, 0 0);
 background-position: 40px -300px;
 padding-top: 240px;
