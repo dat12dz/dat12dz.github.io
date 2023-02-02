@@ -16,7 +16,7 @@ top: 0px;
 
 background: rgba(0, 0, 0, 0.596);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.212);
-backdrop-filter: blur(5px);
+backdrop-filter: blur(2px);
 /* Note: backdrop-filter has minimal browser support */
 border-radius: 0px 0px 8px 8px;
 transition:0.25s;
@@ -162,7 +162,7 @@ color: #000000;
     margin-left:calc((45% - 100px)/2) ;
     border: 1px solid rgba(122, 122, 122, 0.5);
     padding: 50px;
-    backdrop-filter:blur(3px);
+    backdrop-filter:blur(1px);
     border-radius: 10px;
 
 }
@@ -221,7 +221,7 @@ line-height: 122px;
     padding-top: 40px;
     margin-top: 100px;
  
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
 
 }
 #FlexItems{
@@ -311,6 +311,8 @@ a{
     .SecondPar{
         clip-path: polygon(100% 0, 100% 1060px, 300px 100%, 0 100%, 0 0);
         padding-bottom: 100px;
+        background-position: center;
+        background-size: 100% 100%;
     }
 }
 @media only screen and (max-width: 1000px)
