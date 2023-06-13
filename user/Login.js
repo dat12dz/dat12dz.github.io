@@ -8,6 +8,7 @@ function Login(username,password)
         },
         body: JSON.stringify(username,password)
     }).catch((e)=> {
+        if (e == "TypeError: Failed to fetch") writeToPopup("Fail to connect","Server is closed or unable to connect"); else
         writeToPopup("Fail to login",e);
     });
 }
