@@ -1,0 +1,22 @@
+ .heading{
+    font-family: "Rajdhani";
+    color: rgb(0, 0, 0);
+}
+.popup{
+ background-color: rgba(36, 85, 128, 0.959);
+
+ max-width: 80vw;
+}
+.popup-content
+{
+    color: rgb(0, 0, 0);
+}
+.heading
+{
+
+    font-weight: 700;
+}
+body
+{
+    margin: 0;
+}

@@ -12,6 +12,7 @@
         if (window.location.pathname != '/index.html')
         window.location.href ='index.html';
     }
+
 </script>
 <html>
     <title>Đạt Đậu Techonologies</title>
@@ -24,8 +25,8 @@
          <img id="SettingSvg" src="svg/Setting.svg">
         <div class="headerBtn">
             <p onclick="OpenHome(),document.getElementById('LogoFirstPar').scrollIntoView(); "> Trang chủ </p>
-            <p onclick="OpenHome();document.getElementById('ProjectFlexDisplay').scrollIntoView(); "> Các dự án </p>
-            <p onclick="OpenHome();document.getElementById('DecLine').scrollIntoView();"> Thành viên </p> //
+            <p onclick=window.location.href="user/login"> Đăng nhập </p>
+            <p onclick=window.location.href="user/register"> Đăng kí </p> //
         </div>
     </header>
     <body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400&display=swap" rel="stylesheet">
+<link rel=icon type="image/x-icon" href="../Img/LogoTransparent.png">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap" rel="stylesheet">
+<script src="CenterElement.js"></script>
+<script src="../info.js"></script>
+
+<html>
+    <title>Register</title>
+    <link rel="stylesheet" href="Login.css">
+    <div class="display-form">
+        <p class="display" id="Title">
+         REGISTER
+        </p>
+
+        <img class="logo" width = 100px src="../Img/LogoTransparent.png">
+
+        <p class="display">Username</p>
+        <input type="text" class="inputText" id="Username">
+        <p class="display">Email</p>
+        <input type="email" class="inputText" id="email">
+        <p class="display">Password</p>
+        <input type="password" class="inputText" id="Password">
+        <p class="display" id="signUpBtn" onclick=window.location.href="login" >Already have account(s)? Login here.</p>
+        <button type="menu" class="btn" id="SendRegInfo"> 
+            <img  class="insideBtn" src="../svg/enter-16.svg" width="40px" ">
+        </button>
+    </div>
+
+    <script>
+      var form = document.getElementsByClassName("display-form")[0];
+      centerElement(form);
+      
+        window.addEventListener('resize',() => {
+            centerElement(form);
+        })
+        
+    </script>
+       <script src="../Popup.js"></script>
+    <script src="register.js"></script>
+</html>

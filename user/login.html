@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400&display=swap" rel="stylesheet">
+<link rel=icon type="image/x-icon" href="../Img/LogoTransparent.png">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap" rel="stylesheet">
+<script src="CenterElement.js"></script>
+<script src="../info.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Login.css">
+<html>
+    <head>
+
+    </head>
+    <body>
+
+   <title>Login</title>
+ 
+    <div class="display-form">
+        <div>
+            
+        </div>
+        <p class="display" id="Title">
+         LOGIN
+        </p>
+
+        <img class="logo" width = 100px src="../Img/LogoTransparent.png">
+
+        <p class="display">Username</p>
+        <input type="text" class="inputText" id="Username">
+        <p class="display">Password</p>
+        <input type="password" class="inputText" id="Password">
+ 
+        <p class="display" id="signUpBtn" onclick=window.location.href="register" >Sign up</p>
+        <p class="display" id="ForgetPassBtn"  >Forgot password</p>
+        <button class="btn" id="SendLoginInfo"> 
+            <img  class="insideBtn" src="../svg/enter-16.svg" width="40px" ">
+        </button>
+    </div>
+
+    <script>
+      var form = document.getElementsByClassName("display-form")[0];
+      centerElement(form);
+      
+        window.addEventListener('resize',() => {
+            centerElement(form);
+        })
+        
+    </script>
+    <script src="../Popup.js"></script>
+    <script src="Login.js"></script>
+</body>
+</html>
