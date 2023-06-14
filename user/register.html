@@ -14,18 +14,20 @@
     <title>Register</title>
     <link rel="stylesheet" href="Login.css">
     <div class="display-form">
-        <p class="display" id="Title">
-         REGISTER
-        </p>
+        <div class="TitleContainter">
+            <label class="display" id="Title">
+                REGISTER
+            </label>
+        </div >
 
         <img class="logo" width = 100px src="../Img/LogoTransparent.png">
 
         <p class="display">Username</p>
-        <input type="text" class="inputText" id="Username">
+        <input maxlength="30" type="text" class="inputText" id="Username">
         <p class="display">Email</p>
-        <input type="email" class="inputText" id="email">
+        <input maxlength="30"  type="email" class="inputText" id="email">
         <p class="display">Password</p>
-        <input type="password" class="inputText" id="Password">
+        <input maxlength="30"  type="password" class="inputText" id="Password">
         <p class="display" id="signUpBtn" onclick=window.location.href="login" >Already have account(s)? Login here.</p>
         <button type="menu" class="btn" id="SendRegInfo"> 
             <img  class="insideBtn" src="../svg/enter-16.svg" width="40px" ">

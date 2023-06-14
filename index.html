@@ -6,6 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
 <script>
     function OpenHome()
     {
@@ -25,8 +26,8 @@
          <img id="SettingSvg" src="svg/Setting.svg">
         <div class="headerBtn">
             <p onclick="OpenHome(),document.getElementById('LogoFirstPar').scrollIntoView(); "> Trang chủ </p>
-            <p onclick=window.location.href="user/login"> Đăng nhập </p>
-            <p onclick=window.location.href="user/register"> Đăng kí </p> //
+            <p onclick=window.location.href="user/login" id="UsernameOrLogin"> Đăng nhập </p>
+            <p onclick=window.location.href="user/register" id="LogOutOrRegister"> Đăng kí </p> //
         </div>
     </header>
     <body>
@@ -132,7 +133,7 @@
         <p style="margin-top: 25px;">Địa chỉ: Số 1,Đường Võ Chí Công, Nghĩa Đô, Cầu Giấy,Hà Nội</p>
         <p>© 2023 DatDau Technologies. All Rights Reserved.</p>
     </div>
-
+    <script src="CookieHandleing.js"></script>
     </footer>
 </html>
  

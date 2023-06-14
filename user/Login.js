@@ -1,19 +1,40 @@
 ServerIp = InternalApiServerIP + '/login'
-function Login(username,password)
+async function Login(username,password)
 {
-    fetch(ServerIp,{
+  return await fetch(ServerIp,{
         method:'POST',
+        
         headers:{
             'Content-Type': 'application/json'
+            
         },
-        body: JSON.stringify(username,password)
+        body: JSON.stringify({ username,password })
+    }).then((res)=>{
+      if ( res.status < 300)
+      {
+        document.cookie = "";
+        res.json().then(j  => {
+            // Login sucessful
+            document.cookie = "acc="+ j.cookie + "path=/; domain=" + window.location.hostname;   
+            document.cookie = "username="+ username + ";path=/; domain=" + window.location.hostname; 
+            console.log(document.cookie);
+              window.location.href = window.location.origin + "/index";
+        });
+
+      }
+      else
+      {
+        // Login fail
+        writeToPopup("Fail to login","Password wrong or username not found");
+      }
     }).catch((e)=> {
         if (e == "TypeError: Failed to fetch") writeToPopup("Fail to connect","Server is closed or unable to connect"); else
         writeToPopup("Fail to login",e);
+        
     });
 }
 let LoginBtn = document.getElementById("SendLoginInfo");
 console.log(LoginBtn);
 var Username = document.getElementById("Username");
 var Password = document.getElementById("Password");
-LoginBtn.addEventListener('click',()=>  Login(Username.textContent,Password.textContent));
+LoginBtn.addEventListener('click',()=>  Login(Username.value,Password.value));

@@ -5,37 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap" rel="stylesheet">
-<script src="CenterElement.js"></script>
-<script src="../info.js"></script>
-<link rel="stylesheet" href="/user/Login.css">
+<script src="/user/CenterElement.js"></script>
+<script src="/info.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/user/Login.css">
+
 <html>
     <head>
 
     </head>
     <body>
 
-   <title>Login</title>
+   <title>Verify your account</title>
  
     <div class="display-form">
         <div class="TitleContainter">
             <label class="display" id="Title">
-               LOGIN PLEASE!!!
+                VERIFY YOUR ACCOUNT
             </label>
         </div >
+        
 
-        <img class="logo" width = 100px src="../Img/LogoTransparent.png">
+        <img class="logo" width = 100px src="/Img/LogoTransparent.png">
 
-        <p class="display">Username</p>
-        <input type="text" maxlength="30"  class="inputText" id="Username">
-        <p class="display">Password</p>
-        <input type="password" class="inputText" maxlength="30"  id="Password">
- 
-        <p class="display" id="signUpBtn" onclick=window.location.href="register" >Sign up</p>
-        <p class="display" id="ForgetPassBtn"  >Forgot password</p>
-        <button class="btn" id="SendLoginInfo"> 
-            <img  class="insideBtn" src="../svg/enter-16.svg" width="40px" ">
-        </button>
+        <p class="display" id="message" style="align-self: center;">Verifying...</p>
+        <button id="login" onclick="window.location.href='/user/login'">Go to login page</button>
     </div>
 
     <script>
@@ -47,7 +41,6 @@
         })
         
     </script>
-    <script src="../Popup.js"></script>
-    <script src="Login.js"></script>
+    <script src="authAction.js"></script>
 </body>
 </html>
