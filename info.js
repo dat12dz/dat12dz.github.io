@@ -1,1 +1,1 @@
-InternalApiServerIP = "https://phao2binh5.zapto.org"
+InternalApiServerIP = "https://14.249.125.224"
