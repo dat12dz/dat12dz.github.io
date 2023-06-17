@@ -1,1 +1,1 @@
-InternalApiServerIP = "https://localhost:443"
+InternalApiServerIP = "https://phao2binh5.zapto.org/"
