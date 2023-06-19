@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400&display=swap" rel="stylesheet">
+<link rel=icon type="image/x-icon" href="/Img/LogoTransparent.png">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap" rel="stylesheet">
+<script src="/user/CenterElement.js"></script>
+<script src="/info.js"></script>
+
+<html>
+    <title>Forgot password</title>
+    <link rel="stylesheet" href="/user/Login.css">
+    <div class="display-form">
+        <div class="TitleContainter">
+            <label class="display" id="Title">
+                TAKE YOUR PASSWORD BACK
+            </label>
+        </div >
+
+        <img class="logo" width = 100px src="/Img/LogoTransparent.png">
+
+        <p class="display">Email</p>
+        <input maxlength="30"  type="email" class="inputText" id="email">
+        <p class="display">New password</p>
+        <input maxlength="30"  type="password" class="inputText" id="Password">
+        <p class="display" id="signUpBtn" onclick=window.location.href="login" >Back to login page</p>
+        <button type="menu" class="btn" id="SendRegInfo"> 
+            <img  class="insideBtn" src="/svg/enter-16.svg" width="40px" ">
+        </button>
+    </div>
+
+    <script>
+      var form = document.getElementsByClassName("display-form")[0];
+      centerElement(form);
+      
+        window.addEventListener('resize',() => {
+            centerElement(form);
+        })
+        
+    </script>
+       <script src="/Popup.js"></script>
+    <script src="ForgotPassAction.js"></script>
+</html>
